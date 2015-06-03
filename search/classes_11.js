@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['softi2cmaster',['SoftI2cMaster',['../class_soft_i2c_master.html',1,'']]],
+  ['spiclass',['SPIClass',['../class_s_p_i_class.html',1,'']]],
+  ['spiffs',['spiffs',['../structspiffs.html',1,'']]],
+  ['spiffs_5fconfig',['spiffs_config',['../structspiffs__config.html',1,'']]],
+  ['spiffs_5fdir',['spiffs_DIR',['../structspiffs___d_i_r.html',1,'']]],
+  ['spiffs_5fdirent',['spiffs_dirent',['../structspiffs__dirent.html',1,'']]],
+  ['spiffs_5ffd',['spiffs_fd',['../structspiffs__fd.html',1,'']]],
+  ['spiffs_5ffree_5fobj_5fid_5fstate',['spiffs_free_obj_id_state',['../structspiffs__free__obj__id__state.html',1,'']]],
+  ['spiffs_5fgc',['spiffs_gc',['../structspiffs__gc.html',1,'']]],
+  ['spiffs_5fstat',['spiffs_stat',['../structspiffs__stat.html',1,'']]],
+  ['staticjsonbuffer',['StaticJsonBuffer',['../class_arduino_json_1_1_static_json_buffer.html',1,'ArduinoJson']]],
+  ['stationclass',['StationClass',['../class_station_class.html',1,'']]],
+  ['store_5ftypedef_5fattr',['STORE_TYPEDEF_ATTR',['../struct_s_t_o_r_e___t_y_p_e_d_e_f___a_t_t_r.html',1,'']]],
+  ['stream',['Stream',['../class_stream.html',1,'']]],
+  ['stringbuilder',['StringBuilder',['../class_arduino_json_1_1_internals_1_1_string_builder.html',1,'ArduinoJson::Internals']]],
+  ['sys_5ftimeo',['sys_timeo',['../structsys__timeo.html',1,'']]],
+  ['systemclass',['SystemClass',['../class_system_class.html',1,'']]],
+  ['systemclockclass',['SystemClockClass',['../class_system_clock_class.html',1,'']]]
+];
