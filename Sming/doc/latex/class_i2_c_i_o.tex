@@ -1,0 +1,152 @@
+\hypertarget{class_i2_c_i_o}{}\section{I2\+C\+I\+O Class Reference}
+\label{class_i2_c_i_o}\index{I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i2_c_i_o_a32eb7832075ad6011d67874405a0d0a6}{I2\+C\+I\+O} ()
+\item 
+int \hyperlink{class_i2_c_i_o_a6f814653d903dc2ff6e8420eeb7954ae}{begin} (uint8\+\_\+t i2c\+Addr)
+\item 
+void \hyperlink{class_i2_c_i_o_a53b94274eb6bb68564cf5243323db887}{pin\+Mode} (uint8\+\_\+t pin, uint8\+\_\+t dir)
+\item 
+void \hyperlink{class_i2_c_i_o_a0341888753bc54c4384f5593a870fb34}{port\+Mode} (uint8\+\_\+t dir)
+\item 
+uint8\+\_\+t \hyperlink{class_i2_c_i_o_a7a3db7bfc15ede0ae9e8c8bd44290ef7}{read} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_i2_c_i_o_ac26221011a8b49bcea9ef62712ea88a7}{digital\+Read} (uint8\+\_\+t pin)
+\item 
+int \hyperlink{class_i2_c_i_o_ae2063569c927d0008e2593d14504fdcd}{write} (uint8\+\_\+t value)
+\item 
+int \hyperlink{class_i2_c_i_o_a473206162522b847546777d16a7c6dcd}{digital\+Write} (uint8\+\_\+t pin, uint8\+\_\+t level)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_i2_c_i_o_a32eb7832075ad6011d67874405a0d0a6}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\index{I2\+C\+I\+O@{I2\+C\+I\+O}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{I2\+C\+I\+O}]{\setlength{\rightskip}{0pt plus 5cm}I2\+C\+I\+O\+::\+I2\+C\+I\+O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_a32eb7832075ad6011d67874405a0d0a6}
+Constructor method  Class constructor constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i2_c_i_o_a6f814653d903dc2ff6e8420eeb7954ae}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!begin@{begin}}
+\index{begin@{begin}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}int I2\+C\+I\+O\+::begin (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{i2c\+Addr}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_a6f814653d903dc2ff6e8420eeb7954ae}
+Initializes the device.  This method initializes the device allocating an I2\+C address. This method is the first method that should be call prior to calling any other method form this class. On initialization all pins are configured as I\+N\+P\+U\+T on the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i2c\+Addr} & I2\+C Address where the device is located. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the device was initialized correctly, 0 otherwise 
+\end{DoxyReturn}
+\hypertarget{class_i2_c_i_o_ac26221011a8b49bcea9ef62712ea88a7}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!digital\+Read@{digital\+Read}}
+\index{digital\+Read@{digital\+Read}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{digital\+Read}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t I2\+C\+I\+O\+::digital\+Read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pin}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_ac26221011a8b49bcea9ef62712ea88a7}
+Read a pin from the device.  Reads a particular pin from the device. To read a particular pin it has to be configured as I\+N\+P\+U\+T. During initialization all pins are configured as I\+N\+P\+U\+Ts by default. Please refer to pin\+Mode or port\+Mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\mbox{[}in\mbox{]}} & Pin from the port to read its status. Range (0..7) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the pin status (H\+I\+G\+H, L\+O\+W) if the pin is configured as an output, reading its value will always return L\+O\+W regardless of its real state. 
+\end{DoxyReturn}
+\hypertarget{class_i2_c_i_o_a473206162522b847546777d16a7c6dcd}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!digital\+Write@{digital\+Write}}
+\index{digital\+Write@{digital\+Write}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{digital\+Write}]{\setlength{\rightskip}{0pt plus 5cm}int I2\+C\+I\+O\+::digital\+Write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pin, }
+\item[{uint8\+\_\+t}]{level}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_a473206162522b847546777d16a7c6dcd}
+Writes a digital level to a particular pin.  Write a level to the indicated pin of the device. For this method to have effect, the pin has to be configured as O\+U\+T\+P\+U\+T using the pin\+Mode or port\+Mode methods.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\mbox{[}in\mbox{]}} & device pin to change level. Range (0..7).  level\mbox{[}in\mbox{]} logic level to set the pin at (H\+I\+G\+H, L\+O\+W). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_i2_c_i_o_a53b94274eb6bb68564cf5243323db887}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!pin\+Mode@{pin\+Mode}}
+\index{pin\+Mode@{pin\+Mode}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{pin\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void I2\+C\+I\+O\+::pin\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pin, }
+\item[{uint8\+\_\+t}]{dir}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_a53b94274eb6bb68564cf5243323db887}
+Sets the mode of a particular pin.  Sets the mode of a particular pin to I\+N\+P\+U\+T, O\+U\+T\+P\+U\+T. digital\+Write has no effect on pins which are not declared as output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\mbox{[}in\mbox{]}} & Pin from the I2\+C I\+O expander to be configured. Range 0..7 \\
+\hline
+{\em dir\mbox{[}in\mbox{]}} & Pin direction (I\+N\+P\+U\+T, O\+U\+T\+P\+U\+T). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_i2_c_i_o_a0341888753bc54c4384f5593a870fb34}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!port\+Mode@{port\+Mode}}
+\index{port\+Mode@{port\+Mode}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{port\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void I2\+C\+I\+O\+::port\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dir}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_a0341888753bc54c4384f5593a870fb34}
+Sets all the pins of the device in a particular direction.  This method sets all the pins of the device in a particular direction. This method is useful to set all the pins of the device to be either inputs or outputs. 
+\begin{DoxyParams}{Parameters}
+{\em dir\mbox{[}in\mbox{]}} & Direction of all the pins of the device (I\+N\+P\+U\+T, O\+U\+T\+P\+U\+T). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_i2_c_i_o_a7a3db7bfc15ede0ae9e8c8bd44290ef7}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!read@{read}}
+\index{read@{read}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t I2\+C\+I\+O\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_a7a3db7bfc15ede0ae9e8c8bd44290ef7}
+Reads all the pins of the device that are configured as I\+N\+P\+U\+T.  Reads from the device the status of the pins that are configured as I\+N\+P\+U\+T. During initialization all pins are configured as I\+N\+P\+U\+Ts by default. Please refer to pin\+Mode or port\+Mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_i2_c_i_o_ae2063569c927d0008e2593d14504fdcd}{}\index{I2\+C\+I\+O@{I2\+C\+I\+O}!write@{write}}
+\index{write@{write}!I2\+C\+I\+O@{I2\+C\+I\+O}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}int I2\+C\+I\+O\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\label{class_i2_c_i_o_ae2063569c927d0008e2593d14504fdcd}
+Write a value to the device.  Writes to a set of pins in the device. The value is the binary representation of all the pins in device. The value written is masked with the configuration of the direction of the pins; to change the state of a particular pin with this method, such pin has to be configured as O\+U\+T\+P\+U\+T using the port\+Mode or pin\+Mode methods. If no pins have been configured as O\+U\+T\+P\+U\+Ts this method will have no effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\mbox{[}in\mbox{]}} & value to be written to the device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/\+Liquid\+Crystal/I2\+C\+I\+O.\+h\item 
+Libraries/\+Liquid\+Crystal/I2\+C\+I\+O.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{class_arduino_json_1_1_internals_1_1_list}{}\section{Arduino\+Json\+:\+:Internals\+:\+:List$<$ T $>$ Class Template Reference}
+\label{class_arduino_json_1_1_internals_1_1_list}\index{Arduino\+Json\+::\+Internals\+::\+List$<$ T $>$@{Arduino\+Json\+::\+Internals\+::\+List$<$ T $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a9629d1339871e0c62b620cff9936648d}{}typedef T {\bfseries value\+\_\+type}\label{class_arduino_json_1_1_internals_1_1_list_a9629d1339871e0c62b620cff9936648d}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a3bdd86651c7dae3d324a79e73bd35809}{}typedef \hyperlink{struct_arduino_json_1_1_internals_1_1_list_node}{List\+Node}$<$ T $>$ {\bfseries node\+\_\+type}\label{class_arduino_json_1_1_internals_1_1_list_a3bdd86651c7dae3d324a79e73bd35809}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_afba367ba4c70cf65e53e5dceeaf96e01}{}typedef \hyperlink{class_arduino_json_1_1_internals_1_1_list_iterator}{List\+Iterator}$<$ T $>$ {\bfseries iterator}\label{class_arduino_json_1_1_internals_1_1_list_afba367ba4c70cf65e53e5dceeaf96e01}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a647f2c3de1b3810ca31c9041395e83f9}{}typedef \hyperlink{class_arduino_json_1_1_internals_1_1_list_const_iterator}{List\+Const\+Iterator}$<$ T $>$ {\bfseries const\+\_\+iterator}\label{class_arduino_json_1_1_internals_1_1_list_a647f2c3de1b3810ca31c9041395e83f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_ac80f8ee864f278cc05f23526291a2bca}{}{\bfseries List} (\hyperlink{class_arduino_json_1_1_json_buffer}{Json\+Buffer} $\ast$buffer)\label{class_arduino_json_1_1_internals_1_1_list_ac80f8ee864f278cc05f23526291a2bca}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_afc78f181d9a4c7974114ce3eaf87d699}{}bool {\bfseries success} () const \label{class_arduino_json_1_1_internals_1_1_list_afc78f181d9a4c7974114ce3eaf87d699}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a88f43ce43ec374666d5b990c9af5a823}{}int {\bfseries size} () const \label{class_arduino_json_1_1_internals_1_1_list_a88f43ce43ec374666d5b990c9af5a823}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_ab682ebbe0064a0f3a9f47c80a0e12281}{}\hyperlink{class_arduino_json_1_1_internals_1_1_list_iterator}{iterator} {\bfseries begin} ()\label{class_arduino_json_1_1_internals_1_1_list_ab682ebbe0064a0f3a9f47c80a0e12281}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a413a980b3181a75f9d99f167ca7334ab}{}\hyperlink{class_arduino_json_1_1_internals_1_1_list_iterator}{iterator} {\bfseries end} ()\label{class_arduino_json_1_1_internals_1_1_list_a413a980b3181a75f9d99f167ca7334ab}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a19ba4846529160e9136cad0dbb50eb28}{}\hyperlink{class_arduino_json_1_1_internals_1_1_list_const_iterator}{const\+\_\+iterator} {\bfseries begin} () const \label{class_arduino_json_1_1_internals_1_1_list_a19ba4846529160e9136cad0dbb50eb28}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_ab22cd82cfeb6b1f2ba0faf55de055a76}{}\hyperlink{class_arduino_json_1_1_internals_1_1_list_const_iterator}{const\+\_\+iterator} {\bfseries end} () const \label{class_arduino_json_1_1_internals_1_1_list_ab22cd82cfeb6b1f2ba0faf55de055a76}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_ae6c203678f92189591813b43eff3a2fe}{}\hyperlink{struct_arduino_json_1_1_internals_1_1_list_node}{node\+\_\+type} $\ast$ {\bfseries create\+Node} ()\label{class_arduino_json_1_1_internals_1_1_list_ae6c203678f92189591813b43eff3a2fe}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_abe0ad43df41d29c3513e86867c3266fe}{}void {\bfseries add\+Node} (\hyperlink{struct_arduino_json_1_1_internals_1_1_list_node}{node\+\_\+type} $\ast$node\+To\+Add)\label{class_arduino_json_1_1_internals_1_1_list_abe0ad43df41d29c3513e86867c3266fe}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a05da80e7c1e07d998d9219529edd0e80}{}void {\bfseries remove\+Node} (\hyperlink{struct_arduino_json_1_1_internals_1_1_list_node}{node\+\_\+type} $\ast$node\+To\+Remove)\label{class_arduino_json_1_1_internals_1_1_list_a05da80e7c1e07d998d9219529edd0e80}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a03a87a724dd160debd81d895047c9745}{}\hyperlink{class_arduino_json_1_1_json_buffer}{Json\+Buffer} $\ast$ {\bfseries \+\_\+buffer}\label{class_arduino_json_1_1_internals_1_1_list_a03a87a724dd160debd81d895047c9745}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_list_a43e93069e8615279f6c3526fc968f0cf}{}\hyperlink{struct_arduino_json_1_1_internals_1_1_list_node}{node\+\_\+type} $\ast$ {\bfseries \+\_\+first\+Node}\label{class_arduino_json_1_1_internals_1_1_list_a43e93069e8615279f6c3526fc968f0cf}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Services/\+Arduino\+Json/include/\+Arduino\+Json/\+Internals/List.\+hpp\item 
+Services/\+Arduino\+Json/src/\+Internals/List.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{class_ntp_client}{}\section{Ntp\+Client Class Reference}
+\label{class_ntp_client}\index{Ntp\+Client@{Ntp\+Client}}
+Inheritance diagram for Ntp\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ntp_client}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ntp_client_a46add49d6f3467cddd98657adc52022d}{}{\bfseries Ntp\+Client} (Ntp\+Time\+Result\+Callback on\+Time\+Received\+Cb)\label{class_ntp_client_a46add49d6f3467cddd98657adc52022d}
+
+\item 
+\hypertarget{class_ntp_client_ac91b12ec68dea642949c09019b42ced4}{}{\bfseries Ntp\+Client} (String req\+Server, int req\+Interval\+Seconds, Ntp\+Time\+Result\+Callback on\+Time\+Received\+Cb)\label{class_ntp_client_ac91b12ec68dea642949c09019b42ced4}
+
+\item 
+\hypertarget{class_ntp_client_ae161dd8cad61353e0090dcbf0f152420}{}{\bfseries Ntp\+Client} (String req\+Server, int req\+Interval\+Seconds, \hyperlink{class_delegate}{Ntp\+Client\+Result\+Callback} delegate\+Function=N\+U\+L\+L)\label{class_ntp_client_ae161dd8cad61353e0090dcbf0f152420}
+
+\item 
+\hypertarget{class_ntp_client_af02ed50c487b0572e4b00c6159a65b95}{}void {\bfseries request\+Time} ()\label{class_ntp_client_af02ed50c487b0572e4b00c6159a65b95}
+
+\item 
+\hypertarget{class_ntp_client_a85a38d86185c7967b4dfb8deed66f3fc}{}void {\bfseries set\+Ntp\+Server} (String server)\label{class_ntp_client_a85a38d86185c7967b4dfb8deed66f3fc}
+
+\item 
+\hypertarget{class_ntp_client_a2582e24cb2749e70c220d215da627393}{}void {\bfseries set\+Ntp\+Server} (\hyperlink{class_i_p_address}{I\+P\+Address} adress)\label{class_ntp_client_a2582e24cb2749e70c220d215da627393}
+
+\item 
+\hypertarget{class_ntp_client_a5f43fe41391992dd859301c9cf8505b2}{}void {\bfseries set\+Auto\+Query} (bool auto\+Query)\label{class_ntp_client_a5f43fe41391992dd859301c9cf8505b2}
+
+\item 
+\hypertarget{class_ntp_client_a801a30e8e1fc876699a8a71ec6cfcc70}{}void {\bfseries set\+Auto\+Query\+Interval} (int seconds)\label{class_ntp_client_a801a30e8e1fc876699a8a71ec6cfcc70}
+
+\item 
+\hypertarget{class_ntp_client_ab347aea16a3aba444e7636cfbfefbf0e}{}void {\bfseries set\+Auto\+Update\+System\+Clock} (bool auto\+Update\+Clock)\label{class_ntp_client_ab347aea16a3aba444e7636cfbfefbf0e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ntp_client_af542fa6108dfc497145cee6228776115}{}int {\bfseries resolve\+Server} ()\label{class_ntp_client_af542fa6108dfc497145cee6228776115}
+
+\item 
+\hypertarget{class_ntp_client_acc2092a5f662df125d7dd6600dad5ec3}{}void {\bfseries on\+Receive} (\hyperlink{structpbuf}{pbuf} $\ast$buf, \hyperlink{class_i_p_address}{I\+P\+Address} remote\+I\+P, uint16\+\_\+t remote\+Port)\label{class_ntp_client_acc2092a5f662df125d7dd6600dad5ec3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ntp_client_ab4015733d3546a6c1c5b787aab2afc85}{}static void {\bfseries static\+Dns\+Response} (const char $\ast$name, struct \hyperlink{structip__addr}{ip\+\_\+addr} $\ast$ip, void $\ast$arg)\label{class_ntp_client_ab4015733d3546a6c1c5b787aab2afc85}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ntp_client_a3b8cfcd355c2100d3108e009e5a91d65}{}String {\bfseries server} = N\+T\+P\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\label{class_ntp_client_a3b8cfcd355c2100d3108e009e5a91d65}
+
+\item 
+\hypertarget{class_ntp_client_a6d87e3e0b5c26d80a7bfe05e53c97f04}{}\hyperlink{class_i_p_address}{I\+P\+Address} {\bfseries server\+Address} = (uint32\+\_\+t)0\label{class_ntp_client_a6d87e3e0b5c26d80a7bfe05e53c97f04}
+
+\item 
+\hypertarget{class_ntp_client_aa59e45eab7e751bb8ee6d2a8585d4875}{}Ntp\+Time\+Result\+Callback {\bfseries on\+Completed} = nullptr\label{class_ntp_client_aa59e45eab7e751bb8ee6d2a8585d4875}
+
+\item 
+\hypertarget{class_ntp_client_a8c248c8594feb698893b0df65bb98ad9}{}\hyperlink{class_delegate}{Ntp\+Client\+Result\+Callback} {\bfseries delegate\+Completed} = nullptr\label{class_ntp_client_a8c248c8594feb698893b0df65bb98ad9}
+
+\item 
+\hypertarget{class_ntp_client_a3788a373550ccc201532d658c6326cd1}{}bool {\bfseries auto\+Update\+System\+Clock} = false\label{class_ntp_client_a3788a373550ccc201532d658c6326cd1}
+
+\item 
+\hypertarget{class_ntp_client_a4b68b70348203e1d13705de352bc5394}{}\hyperlink{class_timer}{Timer} {\bfseries auto\+Update\+Timer}\label{class_ntp_client_a4b68b70348203e1d13705de352bc5394}
+
+\item 
+\hypertarget{class_ntp_client_af98a2f994584ce9c20f951560c4825f3}{}\hyperlink{class_timer}{Timer} {\bfseries connection\+Timer}\label{class_ntp_client_af98a2f994584ce9c20f951560c4825f3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sming\+Core/\+Network/Ntp\+Client.\+h\item 
+Sming\+Core/\+Network/Ntp\+Client.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{class_mqtt_client}{}\section{Mqtt\+Client Class Reference}
+\label{class_mqtt_client}\index{Mqtt\+Client@{Mqtt\+Client}}
+Inheritance diagram for Mqtt\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mqtt_client}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mqtt_client_ae81fd0caf267d95579f2b17689a94b9d}{}{\bfseries Mqtt\+Client} (String server\+Host, int server\+Port, \hyperlink{class_delegate}{Mqtt\+String\+Subscription\+Callback} callback=N\+U\+L\+L)\label{class_mqtt_client_ae81fd0caf267d95579f2b17689a94b9d}
+
+\item 
+\hypertarget{class_mqtt_client_a5254838ca1080dea6678ab1502381865}{}bool {\bfseries connect} (String client\+Name)\label{class_mqtt_client_a5254838ca1080dea6678ab1502381865}
+
+\item 
+\hypertarget{class_mqtt_client_a155b0c0aa5b18eb99d9cac49e7537d64}{}bool {\bfseries connect} (String client\+Name, String username, String password)\label{class_mqtt_client_a155b0c0aa5b18eb99d9cac49e7537d64}
+
+\item 
+\hypertarget{class_mqtt_client_ae79eaa6ffbd4b60073660f19372bb231}{}\+\_\+\+\_\+forceinline bool {\bfseries is\+Processing} ()\label{class_mqtt_client_ae79eaa6ffbd4b60073660f19372bb231}
+
+\item 
+\hypertarget{class_mqtt_client_ab9ec80e0dc68f1b5876d6bc0907c0649}{}\+\_\+\+\_\+forceinline Tcp\+Client\+State {\bfseries get\+State} ()\label{class_mqtt_client_ab9ec80e0dc68f1b5876d6bc0907c0649}
+
+\item 
+\hypertarget{class_mqtt_client_a8e2571378d6466093b36d411472d0e75}{}bool {\bfseries publish} (String topic, String message, bool retained=false)\label{class_mqtt_client_a8e2571378d6466093b36d411472d0e75}
+
+\item 
+\hypertarget{class_mqtt_client_a522c102c900fc19939c3995162abb56f}{}bool {\bfseries publish\+With\+Qo\+S} (String topic, String message, int Qo\+S, bool retained=false)\label{class_mqtt_client_a522c102c900fc19939c3995162abb56f}
+
+\item 
+\hypertarget{class_mqtt_client_ad3b2e16ea29d7171fe8afc727b2964f5}{}bool {\bfseries subscribe} (String topic)\label{class_mqtt_client_ad3b2e16ea29d7171fe8afc727b2964f5}
+
+\item 
+\hypertarget{class_mqtt_client_a648ef9e9a4d2858b08a2d378da105f96}{}bool {\bfseries unsubscribe} (String topic)\label{class_mqtt_client_a648ef9e9a4d2858b08a2d378da105f96}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mqtt_client_a64d332ee4caddc73030f4bc5f26cd60f}{}virtual err\+\_\+t {\bfseries on\+Receive} (\hyperlink{structpbuf}{pbuf} $\ast$buf)\label{class_mqtt_client_a64d332ee4caddc73030f4bc5f26cd60f}
+
+\item 
+\hypertarget{class_mqtt_client_ad9f0e46e11d19c0f766242d20048c70c}{}virtual void {\bfseries on\+Ready\+To\+Send\+Data} (Tcp\+Connection\+Event source\+Event)\label{class_mqtt_client_ad9f0e46e11d19c0f766242d20048c70c}
+
+\item 
+\hypertarget{class_mqtt_client_a6a515cf9e00ae813a7dbfa172a081db6}{}void {\bfseries debug\+Print\+Response\+Type} (int type, int len)\label{class_mqtt_client_a6a515cf9e00ae813a7dbfa172a081db6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mqtt_client_ac6bf0f650f5b29708bce6b10235806aa}{}static int {\bfseries static\+Send\+Packet} (void $\ast$user\+Info, const void $\ast$buf, unsigned int count)\label{class_mqtt_client_ac6bf0f650f5b29708bce6b10235806aa}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sming\+Core/\+Network/Mqtt\+Client.\+h\item 
+Sming\+Core/\+Network/Mqtt\+Client.\+cpp\end{DoxyCompactItemize}

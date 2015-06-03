@@ -1,0 +1,64 @@
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer}{}\section{Arduino\+Json\+:\+:Internals\+:\+:Json\+Writer Class Reference}
+\label{class_arduino_json_1_1_internals_1_1_json_writer}\index{Arduino\+Json\+::\+Internals\+::\+Json\+Writer@{Arduino\+Json\+::\+Internals\+::\+Json\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a29549cb139e22532c8dcd7fdd4570955}{}{\bfseries Json\+Writer} (Print \&sink)\label{class_arduino_json_1_1_internals_1_1_json_writer_a29549cb139e22532c8dcd7fdd4570955}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a491d15e06706647bf148865af4db6498}{}size\+\_\+t {\bfseries bytes\+Written} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_a491d15e06706647bf148865af4db6498}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a368c20f3443b2c10b23c9ea18c6ef466}{}void {\bfseries begin\+Array} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_a368c20f3443b2c10b23c9ea18c6ef466}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_ad4a25a30f3dc8a6aac5c62355c3fddd8}{}void {\bfseries end\+Array} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_ad4a25a30f3dc8a6aac5c62355c3fddd8}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a8a907d2782560df604af5c16ef03c744}{}void {\bfseries begin\+Object} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_a8a907d2782560df604af5c16ef03c744}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_af223bff28545a6bc589857ecb541e049}{}void {\bfseries end\+Object} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_af223bff28545a6bc589857ecb541e049}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a909e8a284ae245699c8779299248f79c}{}void {\bfseries write\+Colon} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_a909e8a284ae245699c8779299248f79c}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a17d14e25639f61f9b8114dae8c5c9ab8}{}void {\bfseries write\+Comma} ()\label{class_arduino_json_1_1_internals_1_1_json_writer_a17d14e25639f61f9b8114dae8c5c9ab8}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a67e8a339758de2e46a14bf6e00b21a73}{}void {\bfseries write\+String} (const char $\ast$value)\label{class_arduino_json_1_1_internals_1_1_json_writer_a67e8a339758de2e46a14bf6e00b21a73}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_aeb182995643bb087558316df87c24884}{}void {\bfseries write\+Long} (long value)\label{class_arduino_json_1_1_internals_1_1_json_writer_aeb182995643bb087558316df87c24884}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a25cbf2177aaedf05d046194ab812bc05}{}void {\bfseries write\+Boolean} (bool value)\label{class_arduino_json_1_1_internals_1_1_json_writer_a25cbf2177aaedf05d046194ab812bc05}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_aecefdc2de9bfc49c960281c1c1b76121}{}void {\bfseries write\+Double} (double value, uint8\+\_\+t decimals)\label{class_arduino_json_1_1_internals_1_1_json_writer_aecefdc2de9bfc49c960281c1c1b76121}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a83b6cb4e48bc74e6dc8db25df0e393c0}{}void {\bfseries write} (char c)\label{class_arduino_json_1_1_internals_1_1_json_writer_a83b6cb4e48bc74e6dc8db25df0e393c0}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_aa2757d66f17cddb66f27447c5c283fb3}{}void {\bfseries write} (const char $\ast$s)\label{class_arduino_json_1_1_internals_1_1_json_writer_aa2757d66f17cddb66f27447c5c283fb3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a61c8af5b5665d3836dedf28a41127f56}{}Print \& {\bfseries \+\_\+sink}\label{class_arduino_json_1_1_internals_1_1_json_writer_a61c8af5b5665d3836dedf28a41127f56}
+
+\item 
+\hypertarget{class_arduino_json_1_1_internals_1_1_json_writer_a513a8602e4a333abf9c70601ff0b1c67}{}size\+\_\+t {\bfseries \+\_\+length}\label{class_arduino_json_1_1_internals_1_1_json_writer_a513a8602e4a333abf9c70601ff0b1c67}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Services/\+Arduino\+Json/include/\+Arduino\+Json/\+Internals/Json\+Writer.\+hpp\end{DoxyCompactItemize}

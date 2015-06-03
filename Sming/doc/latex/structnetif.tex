@@ -1,0 +1,86 @@
+\hypertarget{structnetif}{}\section{netif Struct Reference}
+\label{structnetif}\index{netif@{netif}}
+
+
+{\ttfamily \#include $<$netif.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnetif}{netif} $\ast$ \hyperlink{structnetif_ae77736b64df442242795220d76be6b86}{next}
+\item 
+ip\+\_\+addr\+\_\+t \hyperlink{structnetif_a9776aaee37ea8f07b9ddc0f8b4e7e866}{ip\+\_\+addr}
+\item 
+\hypertarget{structnetif_a5192f2fa2533f13cfde07d9d5bb0db2b}{}ip\+\_\+addr\+\_\+t {\bfseries netmask}\label{structnetif_a5192f2fa2533f13cfde07d9d5bb0db2b}
+
+\item 
+\hypertarget{structnetif_a353875b68ea303d237d1c3406134ec76}{}ip\+\_\+addr\+\_\+t {\bfseries gw}\label{structnetif_a353875b68ea303d237d1c3406134ec76}
+
+\item 
+netif\+\_\+input\+\_\+fn \hyperlink{structnetif_a8fe4f1b7b0d710216287da9615164a5c}{input}
+\item 
+netif\+\_\+output\+\_\+fn \hyperlink{structnetif_a8e1dcfe65db487feecd244355f39215e}{output}
+\item 
+netif\+\_\+linkoutput\+\_\+fn \hyperlink{structnetif_acaaac9b415a7be73eb8a287c8ed18a8d}{linkoutput}
+\item 
+void $\ast$ \hyperlink{structnetif_a809cc57c0dff09c5c9ae45b02c2002f3}{state}
+\item 
+u16\+\_\+t \hyperlink{structnetif_aca7d56b4e0f822b0ced2885f222b8d48}{mtu}
+\item 
+u8\+\_\+t \hyperlink{structnetif_afe1181561cb16241f3cb5ed01e567d42}{hwaddr\+\_\+len}
+\item 
+u8\+\_\+t \hyperlink{structnetif_ab91f76223d5a7f1a64f03ac9dd7113a4}{hwaddr} \mbox{[}N\+E\+T\+I\+F\+\_\+\+M\+A\+X\+\_\+\+H\+W\+A\+D\+D\+R\+\_\+\+L\+E\+N\mbox{]}
+\item 
+u8\+\_\+t \hyperlink{structnetif_a1c171db6097bbb6f09f63549a66e00ea}{flags}
+\item 
+char \hyperlink{structnetif_a32fca6ffd28bb9af3f891a378827a67e}{name} \mbox{[}2\mbox{]}
+\item 
+u8\+\_\+t \hyperlink{structnetif_ab7ef01e505dd2feb781fe86756b1c973}{num}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic data structure used for all lw\+I\+P network interfaces. The following fields should be filled in by the initialization function for the device driver\+: hwaddr\+\_\+len, hwaddr\mbox{[}\mbox{]}, mtu, flags 
+
+\subsection{Member Data Documentation}
+\hypertarget{structnetif_a1c171db6097bbb6f09f63549a66e00ea}{}\index{netif@{netif}!flags@{flags}}
+\index{flags@{flags}!netif@{netif}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}u8\+\_\+t netif\+::flags}\label{structnetif_a1c171db6097bbb6f09f63549a66e00ea}
+flags (see N\+E\+T\+I\+F\+\_\+\+F\+L\+A\+G\+\_\+ above) 该接口状态、属性字段 \hypertarget{structnetif_ab91f76223d5a7f1a64f03ac9dd7113a4}{}\index{netif@{netif}!hwaddr@{hwaddr}}
+\index{hwaddr@{hwaddr}!netif@{netif}}
+\subsubsection[{hwaddr}]{\setlength{\rightskip}{0pt plus 5cm}u8\+\_\+t netif\+::hwaddr\mbox{[}N\+E\+T\+I\+F\+\_\+\+M\+A\+X\+\_\+\+H\+W\+A\+D\+D\+R\+\_\+\+L\+E\+N\mbox{]}}\label{structnetif_ab91f76223d5a7f1a64f03ac9dd7113a4}
+link level hardware address of this interface 该接口物理地址 \hypertarget{structnetif_afe1181561cb16241f3cb5ed01e567d42}{}\index{netif@{netif}!hwaddr\+\_\+len@{hwaddr\+\_\+len}}
+\index{hwaddr\+\_\+len@{hwaddr\+\_\+len}!netif@{netif}}
+\subsubsection[{hwaddr\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}u8\+\_\+t netif\+::hwaddr\+\_\+len}\label{structnetif_afe1181561cb16241f3cb5ed01e567d42}
+number of bytes used in hwaddr该接口物理地址长度 \hypertarget{structnetif_a8fe4f1b7b0d710216287da9615164a5c}{}\index{netif@{netif}!input@{input}}
+\index{input@{input}!netif@{netif}}
+\subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}netif\+\_\+input\+\_\+fn netif\+::input}\label{structnetif_a8fe4f1b7b0d710216287da9615164a5c}
+This function is called by the network device driver to pass a packet up the T\+C\+P/\+I\+P stack. 向\+I\+P层输入数据包 \hypertarget{structnetif_a9776aaee37ea8f07b9ddc0f8b4e7e866}{}\index{netif@{netif}!ip\+\_\+addr@{ip\+\_\+addr}}
+\index{ip\+\_\+addr@{ip\+\_\+addr}!netif@{netif}}
+\subsubsection[{ip\+\_\+addr}]{\setlength{\rightskip}{0pt plus 5cm}ip\+\_\+addr\+\_\+t netif\+::ip\+\_\+addr}\label{structnetif_a9776aaee37ea8f07b9ddc0f8b4e7e866}
+I\+P address configuration in network byte order \hypertarget{structnetif_acaaac9b415a7be73eb8a287c8ed18a8d}{}\index{netif@{netif}!linkoutput@{linkoutput}}
+\index{linkoutput@{linkoutput}!netif@{netif}}
+\subsubsection[{linkoutput}]{\setlength{\rightskip}{0pt plus 5cm}netif\+\_\+linkoutput\+\_\+fn netif\+::linkoutput}\label{structnetif_acaaac9b415a7be73eb8a287c8ed18a8d}
+This function is called by the A\+R\+P module when it wants to send a packet on the interface. This function outputs the pbuf as-\/is on the link medium. 底层数据包发送 \hypertarget{structnetif_aca7d56b4e0f822b0ced2885f222b8d48}{}\index{netif@{netif}!mtu@{mtu}}
+\index{mtu@{mtu}!netif@{netif}}
+\subsubsection[{mtu}]{\setlength{\rightskip}{0pt plus 5cm}u16\+\_\+t netif\+::mtu}\label{structnetif_aca7d56b4e0f822b0ced2885f222b8d48}
+maximum transfer unit (in bytes) 该接口允许的最大数据包长度，多是1500 \hypertarget{structnetif_a32fca6ffd28bb9af3f891a378827a67e}{}\index{netif@{netif}!name@{name}}
+\index{name@{name}!netif@{netif}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char netif\+::name\mbox{[}2\mbox{]}}\label{structnetif_a32fca6ffd28bb9af3f891a378827a67e}
+descriptive abbreviation 该接口的名字 \hypertarget{structnetif_ae77736b64df442242795220d76be6b86}{}\index{netif@{netif}!next@{next}}
+\index{next@{next}!netif@{netif}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf netif}$\ast$ netif\+::next}\label{structnetif_ae77736b64df442242795220d76be6b86}
+pointer to next in linked list \hypertarget{structnetif_ab7ef01e505dd2feb781fe86756b1c973}{}\index{netif@{netif}!num@{num}}
+\index{num@{num}!netif@{netif}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}u8\+\_\+t netif\+::num}\label{structnetif_ab7ef01e505dd2feb781fe86756b1c973}
+number of this interface 该接口的编号 \hypertarget{structnetif_a8e1dcfe65db487feecd244355f39215e}{}\index{netif@{netif}!output@{output}}
+\index{output@{output}!netif@{netif}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}netif\+\_\+output\+\_\+fn netif\+::output}\label{structnetif_a8e1dcfe65db487feecd244355f39215e}
+This function is called by the I\+P module when it wants to send a packet on the interface. This function typically first resolves the hardware address, then sends the packet. 发送\+I\+P数据包 \hypertarget{structnetif_a809cc57c0dff09c5c9ae45b02c2002f3}{}\index{netif@{netif}!state@{state}}
+\index{state@{state}!netif@{netif}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ netif\+::state}\label{structnetif_a809cc57c0dff09c5c9ae45b02c2002f3}
+This field can be set by the device driver and could point to state information for the device. 自由设置字段，比如指向底层设备相关信息 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/include/lwip/netif.\+h\end{DoxyCompactItemize}

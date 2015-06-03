@@ -1,0 +1,32 @@
+\hypertarget{structicmp__echo__hdr}{}\section{icmp\+\_\+echo\+\_\+hdr Struct Reference}
+\label{structicmp__echo__hdr}\index{icmp\+\_\+echo\+\_\+hdr@{icmp\+\_\+echo\+\_\+hdr}}
+
+
+{\ttfamily \#include $<$icmp.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structicmp__echo__hdr_a628281d8598df1d2ebc16ed59c72d1c0}{}{\bfseries P\+A\+C\+K\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+F\+I\+E\+L\+D} (u8\+\_\+t type)\label{structicmp__echo__hdr_a628281d8598df1d2ebc16ed59c72d1c0}
+
+\item 
+\hypertarget{structicmp__echo__hdr_a05adf7444332cf0f1497b5e009b2bc3e}{}{\bfseries P\+A\+C\+K\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+F\+I\+E\+L\+D} (u8\+\_\+t code)\label{structicmp__echo__hdr_a05adf7444332cf0f1497b5e009b2bc3e}
+
+\item 
+\hypertarget{structicmp__echo__hdr_a5d1bdfcc4a8bdd58513ecbaea368c1ad}{}{\bfseries P\+A\+C\+K\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+F\+I\+E\+L\+D} (u16\+\_\+t chksum)\label{structicmp__echo__hdr_a5d1bdfcc4a8bdd58513ecbaea368c1ad}
+
+\item 
+\hypertarget{structicmp__echo__hdr_a35dd6758d625e1542599175e65235362}{}{\bfseries P\+A\+C\+K\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+F\+I\+E\+L\+D} (u16\+\_\+t id)\label{structicmp__echo__hdr_a35dd6758d625e1542599175e65235362}
+
+\item 
+\hypertarget{structicmp__echo__hdr_a2d2722057bc87fa0afb495ba6716eb57}{}{\bfseries P\+A\+C\+K\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+F\+I\+E\+L\+D} (u16\+\_\+t seqno)\label{structicmp__echo__hdr_a2d2722057bc87fa0afb495ba6716eb57}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the standard I\+C\+M\+P header only that the u32\+\_\+t data is splitted to two u16\+\_\+t like I\+C\+M\+P echo needs it. This header is also used for other I\+C\+M\+P types that do not use the data part. 定义\+I\+C\+M\+P回送请求报文首部结构， 由于所有\+I\+C\+M\+P报文首部有很大相似性， 该结构同样适用于其它\+I\+C\+M\+P报文。 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/include/lwip/icmp.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{class_f_t_p_server_connection}{}\section{F\+T\+P\+Server\+Connection Class Reference}
+\label{class_f_t_p_server_connection}\index{F\+T\+P\+Server\+Connection@{F\+T\+P\+Server\+Connection}}
+Inheritance diagram for F\+T\+P\+Server\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_f_t_p_server_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_t_p_server_connection_aacecab901ba08f31707c8b151b39aa0b}{}{\bfseries F\+T\+P\+Server\+Connection} (\hyperlink{class_f_t_p_server}{F\+T\+P\+Server} $\ast$parent\+Server, tcp\+\_\+pcb $\ast$client\+Tcp)\label{class_f_t_p_server_connection_aacecab901ba08f31707c8b151b39aa0b}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a40eb5a9cd076787f023ad736e55b1386}{}virtual err\+\_\+t {\bfseries on\+Receive} (\hyperlink{structpbuf}{pbuf} $\ast$buf)\label{class_f_t_p_server_connection_a40eb5a9cd076787f023ad736e55b1386}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_ad47f32a37c2cf7bb69082ab1b217955d}{}virtual err\+\_\+t {\bfseries on\+Sent} (uint16\+\_\+t len)\label{class_f_t_p_server_connection_ad47f32a37c2cf7bb69082ab1b217955d}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a3352742c3dff1a7405703bb04bcce16c}{}virtual void {\bfseries on\+Ready\+To\+Send\+Data} (Tcp\+Connection\+Event source\+Event)\label{class_f_t_p_server_connection_a3352742c3dff1a7405703bb04bcce16c}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a5d5d227c7a274938e303fee4df39c53c}{}void {\bfseries data\+Transfer\+Finished} (\hyperlink{class_tcp_connection}{Tcp\+Connection} $\ast$connection)\label{class_f_t_p_server_connection_a5d5d227c7a274938e303fee4df39c53c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_t_p_server_connection_ac2db42bde1c485cb649638eeeba45b55}{}virtual void {\bfseries on\+Command} (String cmd, String data)\label{class_f_t_p_server_connection_ac2db42bde1c485cb649638eeeba45b55}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a0e10956fe9b5eced5d1531c85ed2092c}{}virtual void {\bfseries response} (int code, String text=\char`\"{}\char`\"{})\label{class_f_t_p_server_connection_a0e10956fe9b5eced5d1531c85ed2092c}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a8e537ef40a67def74890e6b0d7e1de3d}{}int {\bfseries get\+Splitter\+Pos} (String data, char splitter, uint8\+\_\+t number)\label{class_f_t_p_server_connection_a8e537ef40a67def74890e6b0d7e1de3d}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a93e4df7c53271118e3975b9f2ee4ba66}{}String {\bfseries make\+File\+Name} (String name, bool short\+It)\label{class_f_t_p_server_connection_a93e4df7c53271118e3975b9f2ee4ba66}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a60d9eea49392714f23d28c88a55c3e4b}{}void {\bfseries cmd\+Port} (const String \&data)\label{class_f_t_p_server_connection_a60d9eea49392714f23d28c88a55c3e4b}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a437c82fc427d5463cc3bc13261a71317}{}void {\bfseries create\+Data\+Connection} (\hyperlink{class_tcp_connection}{Tcp\+Connection} $\ast$connection)\label{class_f_t_p_server_connection_a437c82fc427d5463cc3bc13261a71317}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a92fc4d82fc9c5b3cc3b65adae26d2eae}{}bool {\bfseries is\+Can\+Transfer} ()\label{class_f_t_p_server_connection_a92fc4d82fc9c5b3cc3b65adae26d2eae}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_t_p_server_connection_a99e599a35280ac84d2e1f25cafa8d2aa}{}class {\bfseries F\+T\+P\+Data\+Stream}\label{class_f_t_p_server_connection_a99e599a35280ac84d2e1f25cafa8d2aa}
+
+\item 
+\hypertarget{class_f_t_p_server_connection_a30283ec79f994d5512e92217a7c033e8}{}class {\bfseries F\+T\+P\+Server}\label{class_f_t_p_server_connection_a30283ec79f994d5512e92217a7c033e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sming\+Core/\+Network/F\+T\+P\+Server\+Connection.\+h\item 
+Sming\+Core/\+Network/F\+T\+P\+Server\+Connection.\+cpp\end{DoxyCompactItemize}

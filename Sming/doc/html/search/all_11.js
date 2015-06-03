@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['readme',['README',['../md__libraries__t_f_t__i_l_i9163_c__r_e_a_d_m_e.html',1,'']]],
+  ['rangecm',['rangeCM',['../class_ultrasonic.html#ad8616d90b18f74ac703f2897e9e0bc04',1,'Ultrasonic']]],
+  ['rangeinch',['rangeInch',['../class_ultrasonic.html#a5d6fe02b6a88aa1c147517551804f079',1,'Ultrasonic']]],
+  ['raw_5fdebug',['RAW_DEBUG',['../opt_8h.html#af0551bef83c0fc1baa57cf339d220e25',1,'RAW_DEBUG():&#160;opt.h'],['../lwipopts_8h.html#af0551bef83c0fc1baa57cf339d220e25',1,'RAW_DEBUG():&#160;lwipopts.h']]],
+  ['raw_5fttl',['RAW_TTL',['../opt_8h.html#a36e3ffa66073ca0d27d11c422778249c',1,'RAW_TTL():&#160;opt.h'],['../lwipopts_8h.html#a36e3ffa66073ca0d27d11c422778249c',1,'RAW_TTL():&#160;lwipopts.h']]],
+  ['rcvmsgbuff',['RcvMsgBuff',['../struct_rcv_msg_buff.html',1,'']]],
+  ['read',['read',['../class_i2_c_i_o.html#a7a3db7bfc15ede0ae9e8c8bd44290ef7',1,'I2CIO::read()'],['../class_i2c_master_base.html#ab0642665deb11295592d3e46c8baaefa',1,'I2cMasterBase::read()'],['../class_soft_i2c_master.html#a56993378a66a702113eef640d8c82ea9',1,'SoftI2cMaster::read()']]],
+  ['readbit',['readBit',['../class_i2_cdev.html#abe6d8ea07027d362419de86188981559',1,'I2Cdev']]],
+  ['readbits',['readBits',['../class_i2_cdev.html#a8e5e9742072bb80db06ccd46f52e2b6d',1,'I2Cdev']]],
+  ['readbitsw',['readBitsW',['../class_i2_cdev.html#a1f417ba3e5ce99832e07c31522c97f87',1,'I2Cdev']]],
+  ['readbitw',['readBitW',['../class_i2_cdev.html#aaaa3b9ef9500a7d69ccc3d0ccaae33c4',1,'I2Cdev']]],
+  ['readbyte',['readByte',['../class_i2_cdev.html#ad3fb41ce124a29f93749d99611c75c33',1,'I2Cdev']]],
+  ['readbytes',['readBytes',['../class_i2_cdev.html#aca9c503da5cffd6ac6f8eff9b195c5f4',1,'I2Cdev']]],
+  ['readtimeout',['readTimeout',['../class_i2_cdev.html#ae2125796e0948127fc15031650111e82',1,'I2Cdev']]],
+  ['readword',['readWord',['../class_i2_cdev.html#a545cd48b1e806e7e467b542c9e38e8c8',1,'I2Cdev']]],
+  ['readwords',['readWords',['../class_i2_cdev.html#a1b3d895dc6a00cbb5fb3b0441b2e35de',1,'I2Cdev']]],
+  ['recv_5fbufsize_5fdefault',['RECV_BUFSIZE_DEFAULT',['../opt_8h.html#a5dbd0a61f30ae6c6bfbda635095f138d',1,'RECV_BUFSIZE_DEFAULT():&#160;opt.h'],['../lwipopts_8h.html#a5dbd0a61f30ae6c6bfbda635095f138d',1,'RECV_BUFSIZE_DEFAULT():&#160;lwipopts.h']]],
+  ['recv_5fcallback',['recv_callback',['../structespconn.html#a89f6cc886a70f9b844093673f2083f00',1,'espconn']]],
+  ['ref',['ref',['../structpbuf.html#a18e2c02942feb1baa3756fcd585b6731',1,'pbuf']]],
+  ['referencetype',['ReferenceType',['../class_arduino_json_1_1_internals_1_1_reference_type.html',1,'ArduinoJson::Internals']]],
+  ['restart',['restart',['../class_i2c_master_base.html#a3ccb7274e45f8842f5748d5ae9931dd0',1,'I2cMasterBase::restart()'],['../class_soft_i2c_master.html#a4ec0db661a654943888df023b233bcc5',1,'SoftI2cMaster::restart()']]],
+  ['righttoleft',['rightToLeft',['../class_l_c_d.html#ac014830eadc26bfd86308ea8734f4428',1,'LCD']]]
+];

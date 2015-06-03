@@ -1,0 +1,26 @@
+var class_h_m_c5883_l =
+[
+    [ "HMC5883L", "class_h_m_c5883_l.html#ab552ed5dd985c500aa37ac11f9ed3eed", null ],
+    [ "HMC5883L", "class_h_m_c5883_l.html#ad7dd693f11a1486efb3ecd7d3d5158b6", null ],
+    [ "getDataRate", "class_h_m_c5883_l.html#aabc0bc9aca80ba60edb73a3a79a3591a", null ],
+    [ "getGain", "class_h_m_c5883_l.html#aafb840245d6da7e4b99d0fd60517449e", null ],
+    [ "getHeading", "class_h_m_c5883_l.html#ad13bc00bc5c279280963e233a1e6ccdb", null ],
+    [ "getHeadingX", "class_h_m_c5883_l.html#a731814d3ed8ff47db1289c00881302e4", null ],
+    [ "getHeadingY", "class_h_m_c5883_l.html#a2282a12f4946351e8cc75cd7cf198f5f", null ],
+    [ "getHeadingZ", "class_h_m_c5883_l.html#aa5f74e5f37b0c1c81b94e587c1444dc3", null ],
+    [ "getIDA", "class_h_m_c5883_l.html#a635e0dc751950dea7988660738de3015", null ],
+    [ "getIDB", "class_h_m_c5883_l.html#a97c3414d37fbfdee572d6494fddba020", null ],
+    [ "getIDC", "class_h_m_c5883_l.html#ad5f7ab00a7380f0819e20f62a572c862", null ],
+    [ "getLockStatus", "class_h_m_c5883_l.html#aef3ae1e937db7acefe8da874bf61e2d9", null ],
+    [ "getMeasurementBias", "class_h_m_c5883_l.html#a7210ef51ef0ad1d0908204ef5b720cac", null ],
+    [ "getMode", "class_h_m_c5883_l.html#a3bc31a9c1d3db84f608da8a78b65b86f", null ],
+    [ "getReadyStatus", "class_h_m_c5883_l.html#a072db23747928a8fd5b41a48d37fff5d", null ],
+    [ "getSampleAveraging", "class_h_m_c5883_l.html#a99c7262f906b7bd4b0deb4e94857dfd9", null ],
+    [ "initialize", "class_h_m_c5883_l.html#a6e895366c47f22ab9dbe2750f2302dc4", null ],
+    [ "setDataRate", "class_h_m_c5883_l.html#a2a13729786821e826448fac7ee43ad9e", null ],
+    [ "setGain", "class_h_m_c5883_l.html#a1b1afb0da7ce46bede77773c99223d43", null ],
+    [ "setMeasurementBias", "class_h_m_c5883_l.html#aafc17d11bb9f4ed9660ac0fd94991aa8", null ],
+    [ "setMode", "class_h_m_c5883_l.html#a2838d4abd590beecad8946c4b97b7f24", null ],
+    [ "setSampleAveraging", "class_h_m_c5883_l.html#a9bf281a4dcf8f21f9a64624f835b8974", null ],
+    [ "testConnection", "class_h_m_c5883_l.html#acfa47db9eccdf7ac120935de8a123f33", null ]
+];

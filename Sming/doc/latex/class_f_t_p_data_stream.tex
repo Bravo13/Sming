@@ -1,0 +1,56 @@
+\hypertarget{class_f_t_p_data_stream}{}\section{F\+T\+P\+Data\+Stream Class Reference}
+\label{class_f_t_p_data_stream}\index{F\+T\+P\+Data\+Stream@{F\+T\+P\+Data\+Stream}}
+Inheritance diagram for F\+T\+P\+Data\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_f_t_p_data_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_t_p_data_stream_a2af1acb58e2cf042ac8fc07e8ccdc3a3}{}{\bfseries F\+T\+P\+Data\+Stream} (\hyperlink{class_f_t_p_server_connection}{F\+T\+P\+Server\+Connection} $\ast$connection)\label{class_f_t_p_data_stream_a2af1acb58e2cf042ac8fc07e8ccdc3a3}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_aca2f90b7902043fcb71bc4d959732387}{}virtual err\+\_\+t {\bfseries on\+Connected} (err\+\_\+t err)\label{class_f_t_p_data_stream_aca2f90b7902043fcb71bc4d959732387}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a8a6ea4976b357a6307c4fba634a75db9}{}virtual err\+\_\+t {\bfseries on\+Sent} (uint16\+\_\+t len)\label{class_f_t_p_data_stream_a8a6ea4976b357a6307c4fba634a75db9}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a9cbc0ceadf3730c1164afed24d84f5f8}{}void {\bfseries finish\+Transfer} ()\label{class_f_t_p_data_stream_a9cbc0ceadf3730c1164afed24d84f5f8}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a73a91d01d206fc8ffc78228368b9d2ac}{}void {\bfseries response} (int code, String text=\char`\"{}\char`\"{})\label{class_f_t_p_data_stream_a73a91d01d206fc8ffc78228368b9d2ac}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a8da4f750cf0b17429e8d730cdd676c8e}{}int {\bfseries write} (const char $\ast$data, int len, uint8\+\_\+t apiflags=0)\label{class_f_t_p_data_stream_a8da4f750cf0b17429e8d730cdd676c8e}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a52fd64cf6ecd66115e52e790bdcf2dd7}{}virtual void {\bfseries on\+Ready\+To\+Send\+Data} (Tcp\+Connection\+Event source\+Event)\label{class_f_t_p_data_stream_a52fd64cf6ecd66115e52e790bdcf2dd7}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_ac10b635d64be2b913bc8a3fbe6631271}{}virtual void {\bfseries transfer\+Data} (Tcp\+Connection\+Event source\+Event)\label{class_f_t_p_data_stream_ac10b635d64be2b913bc8a3fbe6631271}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_t_p_data_stream_a6db9ff53eb8823e1e00892cd5da9fbd4}{}\hyperlink{class_f_t_p_server_connection}{F\+T\+P\+Server\+Connection} $\ast$ {\bfseries parent}\label{class_f_t_p_data_stream_a6db9ff53eb8823e1e00892cd5da9fbd4}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_aad73d06e1fb6b7191a7bff8e28c6f216}{}bool {\bfseries completed}\label{class_f_t_p_data_stream_aad73d06e1fb6b7191a7bff8e28c6f216}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a0cd2d52a8205a08bb3a5aadc634c3254}{}int {\bfseries written}\label{class_f_t_p_data_stream_a0cd2d52a8205a08bb3a5aadc634c3254}
+
+\item 
+\hypertarget{class_f_t_p_data_stream_a16f4c6b5fa1bce3a838a88858dd36b2f}{}int {\bfseries sent}\label{class_f_t_p_data_stream_a16f4c6b5fa1bce3a838a88858dd36b2f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sming\+Core/\+Network/F\+T\+P\+Server\+Connection.\+cpp\end{DoxyCompactItemize}

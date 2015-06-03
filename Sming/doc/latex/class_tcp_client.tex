@@ -1,0 +1,78 @@
+\hypertarget{class_tcp_client}{}\section{Tcp\+Client Class Reference}
+\label{class_tcp_client}\index{Tcp\+Client@{Tcp\+Client}}
+Inheritance diagram for Tcp\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_tcp_client}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tcp_client_a4d2ba17936e3447c4e19984c1452f58c}{}{\bfseries Tcp\+Client} (bool auto\+Destruct)\label{class_tcp_client_a4d2ba17936e3447c4e19984c1452f58c}
+
+\item 
+\hypertarget{class_tcp_client_a497b51d3af4d908bd5f8fc834406d958}{}{\bfseries Tcp\+Client} (tcp\+\_\+pcb $\ast$client\+Tcp, \hyperlink{class_delegate}{Tcp\+Client\+Data\+Callback} client\+Receive, bool auto\+Destruct)\label{class_tcp_client_a497b51d3af4d908bd5f8fc834406d958}
+
+\item 
+\hypertarget{class_tcp_client_a917bbc3e31bbe21d8559c10239c57e93}{}{\bfseries Tcp\+Client} (\hyperlink{class_delegate}{Tcp\+Client\+Bool\+Callback} on\+Completed, \hyperlink{class_delegate}{Tcp\+Client\+Event\+Callback} on\+Ready\+To\+Send, \hyperlink{class_delegate}{Tcp\+Client\+Data\+Callback} on\+Receive=N\+U\+L\+L)\label{class_tcp_client_a917bbc3e31bbe21d8559c10239c57e93}
+
+\item 
+\hypertarget{class_tcp_client_a07f2ee5c3af559cdcc907c2966f23d2b}{}{\bfseries Tcp\+Client} (\hyperlink{class_delegate}{Tcp\+Client\+Bool\+Callback} on\+Completed, \hyperlink{class_delegate}{Tcp\+Client\+Data\+Callback} on\+Receive=N\+U\+L\+L)\label{class_tcp_client_a07f2ee5c3af559cdcc907c2966f23d2b}
+
+\item 
+\hypertarget{class_tcp_client_aac792f1ec97d83a5d585b3d8d2c37d9a}{}{\bfseries Tcp\+Client} (\hyperlink{class_delegate}{Tcp\+Client\+Data\+Callback} on\+Receive)\label{class_tcp_client_aac792f1ec97d83a5d585b3d8d2c37d9a}
+
+\item 
+\hypertarget{class_tcp_client_afd0490a4bf9a16b3609828d61b51b36f}{}virtual bool {\bfseries connect} (String server, int port)\label{class_tcp_client_afd0490a4bf9a16b3609828d61b51b36f}
+
+\item 
+\hypertarget{class_tcp_client_a50f33d7a069d02a419c1280f665b89ad}{}virtual bool {\bfseries connect} (\hyperlink{class_i_p_address}{I\+P\+Address} addr, uint16\+\_\+t port)\label{class_tcp_client_a50f33d7a069d02a419c1280f665b89ad}
+
+\item 
+\hypertarget{class_tcp_client_a1ee082bbca3927811bbe2c0aa75386c4}{}virtual void {\bfseries close} ()\label{class_tcp_client_a1ee082bbca3927811bbe2c0aa75386c4}
+
+\item 
+\hypertarget{class_tcp_client_a38bf30a25fe74a70ef874bb2524a6da3}{}bool {\bfseries send} (const char $\ast$data, uint8\+\_\+t len, bool force\+Close\+After\+Sent=false)\label{class_tcp_client_a38bf30a25fe74a70ef874bb2524a6da3}
+
+\item 
+\hypertarget{class_tcp_client_a08a4c755e8dab2b3761a56ac8386e41b}{}bool {\bfseries send\+String} (String data, bool force\+Close\+After\+Sent=false)\label{class_tcp_client_a08a4c755e8dab2b3761a56ac8386e41b}
+
+\item 
+\hypertarget{class_tcp_client_af97510bea711663fbe4803829561c968}{}\+\_\+\+\_\+forceinline bool {\bfseries is\+Processing} ()\label{class_tcp_client_af97510bea711663fbe4803829561c968}
+
+\item 
+\hypertarget{class_tcp_client_a39adb717bf57c16fcd6496752bda510a}{}\+\_\+\+\_\+forceinline Tcp\+Client\+State {\bfseries get\+State} ()\label{class_tcp_client_a39adb717bf57c16fcd6496752bda510a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tcp_client_a45b8fb12ee004796d53ddbed19a18f47}{}virtual err\+\_\+t {\bfseries on\+Connected} (err\+\_\+t err)\label{class_tcp_client_a45b8fb12ee004796d53ddbed19a18f47}
+
+\item 
+\hypertarget{class_tcp_client_aa756d90a9f145de249073adf51326a35}{}virtual err\+\_\+t {\bfseries on\+Receive} (\hyperlink{structpbuf}{pbuf} $\ast$buf)\label{class_tcp_client_aa756d90a9f145de249073adf51326a35}
+
+\item 
+\hypertarget{class_tcp_client_aa5636a7fbd1272a72fee443c30e450a8}{}virtual err\+\_\+t {\bfseries on\+Sent} (uint16\+\_\+t len)\label{class_tcp_client_aa5636a7fbd1272a72fee443c30e450a8}
+
+\item 
+\hypertarget{class_tcp_client_afeb67a00dabb644f1e7868e4605031b5}{}virtual void {\bfseries on\+Error} (err\+\_\+t err)\label{class_tcp_client_afeb67a00dabb644f1e7868e4605031b5}
+
+\item 
+\hypertarget{class_tcp_client_aea9b23efa5fc8b975b509344c52fa8b9}{}virtual void {\bfseries on\+Ready\+To\+Send\+Data} (Tcp\+Connection\+Event source\+Event)\label{class_tcp_client_aea9b23efa5fc8b975b509344c52fa8b9}
+
+\item 
+\hypertarget{class_tcp_client_ac36af0e7978a712b0833d40151f4ff85}{}virtual void {\bfseries on\+Finished} (Tcp\+Client\+State finish\+State)\label{class_tcp_client_ac36af0e7978a712b0833d40151f4ff85}
+
+\item 
+\hypertarget{class_tcp_client_a162be33aa3e851eb92ccd361f64c6706}{}void {\bfseries push\+Async\+Part} ()\label{class_tcp_client_a162be33aa3e851eb92ccd361f64c6706}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sming\+Core/\+Network/Tcp\+Client.\+h\item 
+Sming\+Core/\+Network/Tcp\+Client.\+cpp\end{DoxyCompactItemize}

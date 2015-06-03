@@ -1,0 +1,449 @@
+\hypertarget{class_h_m_c5883_l}{}\section{H\+M\+C5883\+L Class Reference}
+\label{class_h_m_c5883_l}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_h_m_c5883_l_ab552ed5dd985c500aa37ac11f9ed3eed}{H\+M\+C5883\+L} ()
+\item 
+\hyperlink{class_h_m_c5883_l_ad7dd693f11a1486efb3ecd7d3d5158b6}{H\+M\+C5883\+L} (uint8\+\_\+t address)
+\item 
+void \hyperlink{class_h_m_c5883_l_a6e895366c47f22ab9dbe2750f2302dc4}{initialize} ()
+\item 
+bool \hyperlink{class_h_m_c5883_l_acfa47db9eccdf7ac120935de8a123f33}{test\+Connection} ()
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_a99c7262f906b7bd4b0deb4e94857dfd9}{get\+Sample\+Averaging} ()
+\item 
+void \hyperlink{class_h_m_c5883_l_a9bf281a4dcf8f21f9a64624f835b8974}{set\+Sample\+Averaging} (uint8\+\_\+t averaging)
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_aabc0bc9aca80ba60edb73a3a79a3591a}{get\+Data\+Rate} ()
+\item 
+void \hyperlink{class_h_m_c5883_l_a2a13729786821e826448fac7ee43ad9e}{set\+Data\+Rate} (uint8\+\_\+t rate)
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_a7210ef51ef0ad1d0908204ef5b720cac}{get\+Measurement\+Bias} ()
+\item 
+void \hyperlink{class_h_m_c5883_l_aafc17d11bb9f4ed9660ac0fd94991aa8}{set\+Measurement\+Bias} (uint8\+\_\+t bias)
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_aafb840245d6da7e4b99d0fd60517449e}{get\+Gain} ()
+\item 
+void \hyperlink{class_h_m_c5883_l_a1b1afb0da7ce46bede77773c99223d43}{set\+Gain} (uint8\+\_\+t gain)
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_a3bc31a9c1d3db84f608da8a78b65b86f}{get\+Mode} ()
+\item 
+void \hyperlink{class_h_m_c5883_l_a2838d4abd590beecad8946c4b97b7f24}{set\+Mode} (uint8\+\_\+t mode)
+\item 
+void \hyperlink{class_h_m_c5883_l_ad13bc00bc5c279280963e233a1e6ccdb}{get\+Heading} (int16\+\_\+t $\ast$x, int16\+\_\+t $\ast$y, int16\+\_\+t $\ast$z)
+\item 
+int16\+\_\+t \hyperlink{class_h_m_c5883_l_a731814d3ed8ff47db1289c00881302e4}{get\+Heading\+X} ()
+\item 
+int16\+\_\+t \hyperlink{class_h_m_c5883_l_a2282a12f4946351e8cc75cd7cf198f5f}{get\+Heading\+Y} ()
+\item 
+int16\+\_\+t \hyperlink{class_h_m_c5883_l_aa5f74e5f37b0c1c81b94e587c1444dc3}{get\+Heading\+Z} ()
+\item 
+bool \hyperlink{class_h_m_c5883_l_aef3ae1e937db7acefe8da874bf61e2d9}{get\+Lock\+Status} ()
+\item 
+bool \hyperlink{class_h_m_c5883_l_a072db23747928a8fd5b41a48d37fff5d}{get\+Ready\+Status} ()
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_a635e0dc751950dea7988660738de3015}{get\+I\+D\+A} ()
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_a97c3414d37fbfdee572d6494fddba020}{get\+I\+D\+B} ()
+\item 
+uint8\+\_\+t \hyperlink{class_h_m_c5883_l_ad5f7ab00a7380f0819e20f62a572c862}{get\+I\+D\+C} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_h_m_c5883_l_ab552ed5dd985c500aa37ac11f9ed3eed}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{H\+M\+C5883\+L}]{\setlength{\rightskip}{0pt plus 5cm}H\+M\+C5883\+L\+::\+H\+M\+C5883\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_ab552ed5dd985c500aa37ac11f9ed3eed}
+Default constructor, uses default I2\+C address. \begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_ad7dd693f11a1486efb3ecd7d3d5158b6}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{H\+M\+C5883\+L}]{\setlength{\rightskip}{0pt plus 5cm}H\+M\+C5883\+L\+::\+H\+M\+C5883\+L (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_ad7dd693f11a1486efb3ecd7d3d5158b6}
+Specific address constructor. 
+\begin{DoxyParams}{Parameters}
+{\em address} & I2\+C address \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S 
+
+H\+M\+C5883\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_h_m_c5883_l_aabc0bc9aca80ba60edb73a3a79a3591a}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Data\+Rate@{get\+Data\+Rate}}
+\index{get\+Data\+Rate@{get\+Data\+Rate}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Data\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+Data\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_aabc0bc9aca80ba60edb73a3a79a3591a}
+Get data output rate value. The Table below shows all selectable output rates in continuous measurement mode. All three channels shall be measured within a given output rate. Other output rates with maximum rate of 160 Hz can be achieved by monitoring D\+R\+D\+Y interrupt pin in single measurement mode.
+
+Value $\vert$ Typical Data Output Rate (Hz) -\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 0 $\vert$ 0.\+75 1 $\vert$ 1.\+5 2 $\vert$ 3 3 $\vert$ 7.\+5 4 $\vert$ 15 (Default) 5 $\vert$ 30 6 $\vert$ 75 7 $\vert$ Not used
+
+\begin{DoxyReturn}{Returns}
+Current rate of data output to registers 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+T\+E\+\_\+15 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+A 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+R\+A\+T\+E\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+R\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_aafb840245d6da7e4b99d0fd60517449e}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Gain@{get\+Gain}}
+\index{get\+Gain@{get\+Gain}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_aafb840245d6da7e4b99d0fd60517449e}
+Get magnetic field gain value. The table below shows nominal gain settings. Use the \char`\"{}\+Gain\char`\"{} column to convert counts to Gauss. Choose a lower gain value (higher G\+N\#) when total field strength causes overflow in one of the data output registers (saturation). The data output range for all settings is 0x\+F800-\/0x07\+F\+F (-\/2048 -\/ 2047).
+
+Value $\vert$ Field Range $\vert$ Gain (L\+S\+B/\+Gauss) -\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 0 $\vert$ +/-\/ 0.\+88 Ga $\vert$ 1370 1 $\vert$ +/-\/ 1.\+3 Ga $\vert$ 1090 (Default) 2 $\vert$ +/-\/ 1.\+9 Ga $\vert$ 820 3 $\vert$ +/-\/ 2.\+5 Ga $\vert$ 660 4 $\vert$ +/-\/ 4.\+0 Ga $\vert$ 440 5 $\vert$ +/-\/ 4.\+7 Ga $\vert$ 390 6 $\vert$ +/-\/ 5.\+6 Ga $\vert$ 330 7 $\vert$ +/-\/ 8.\+1 Ga $\vert$ 230
+
+\begin{DoxyReturn}{Returns}
+Current magnetic field gain value 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+G\+A\+I\+N\+\_\+1090 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+B 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+B\+\_\+\+G\+A\+I\+N\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+B\+\_\+\+G\+A\+I\+N\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_ad13bc00bc5c279280963e233a1e6ccdb}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Heading@{get\+Heading}}
+\index{get\+Heading@{get\+Heading}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Heading}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::get\+Heading (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t $\ast$}]{x, }
+\item[{int16\+\_\+t $\ast$}]{y, }
+\item[{int16\+\_\+t $\ast$}]{z}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_ad13bc00bc5c279280963e233a1e6ccdb}
+Get 3-\/axis heading measurements. In the event the A\+D\+C reading overflows or underflows for the given channel, or if there is a math overflow during the bias measurement, this data register will contain the value -\/4096. This register value will clear when after the next valid measurement is made. Note that this method automatically clears the appropriate bit in the M\+O\+D\+E register if Single mode is active. 
+\begin{DoxyParams}{Parameters}
+{\em x} & 16-\/bit signed integer container for X-\/axis heading \\
+\hline
+{\em y} & 16-\/bit signed integer container for Y-\/axis heading \\
+\hline
+{\em z} & 16-\/bit signed integer container for Z-\/axis heading \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+D\+A\+T\+A\+X\+\_\+\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a731814d3ed8ff47db1289c00881302e4}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Heading\+X@{get\+Heading\+X}}
+\index{get\+Heading\+X@{get\+Heading\+X}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Heading\+X}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t H\+M\+C5883\+L\+::get\+Heading\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a731814d3ed8ff47db1289c00881302e4}
+Get X-\/axis heading measurement. \begin{DoxyReturn}{Returns}
+16-\/bit signed integer with X-\/axis heading 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+D\+A\+T\+A\+X\+\_\+\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a2282a12f4946351e8cc75cd7cf198f5f}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Heading\+Y@{get\+Heading\+Y}}
+\index{get\+Heading\+Y@{get\+Heading\+Y}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Heading\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t H\+M\+C5883\+L\+::get\+Heading\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a2282a12f4946351e8cc75cd7cf198f5f}
+Get Y-\/axis heading measurement. \begin{DoxyReturn}{Returns}
+16-\/bit signed integer with Y-\/axis heading 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+D\+A\+T\+A\+Y\+\_\+\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_aa5f74e5f37b0c1c81b94e587c1444dc3}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Heading\+Z@{get\+Heading\+Z}}
+\index{get\+Heading\+Z@{get\+Heading\+Z}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Heading\+Z}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t H\+M\+C5883\+L\+::get\+Heading\+Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_aa5f74e5f37b0c1c81b94e587c1444dc3}
+Get Z-\/axis heading measurement. \begin{DoxyReturn}{Returns}
+16-\/bit signed integer with Z-\/axis heading 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+D\+A\+T\+A\+Z\+\_\+\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a635e0dc751950dea7988660738de3015}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+I\+D\+A@{get\+I\+D\+A}}
+\index{get\+I\+D\+A@{get\+I\+D\+A}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+I\+D\+A}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+I\+D\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a635e0dc751950dea7988660738de3015}
+Get identification byte A \begin{DoxyReturn}{Returns}
+I\+D\+\_\+\+A byte (should be 01001000, A\+S\+C\+I\+I value \textquotesingle{}H\textquotesingle{}) 
+\end{DoxyReturn}
+\hypertarget{class_h_m_c5883_l_a97c3414d37fbfdee572d6494fddba020}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+I\+D\+B@{get\+I\+D\+B}}
+\index{get\+I\+D\+B@{get\+I\+D\+B}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+I\+D\+B}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+I\+D\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a97c3414d37fbfdee572d6494fddba020}
+Get identification byte B \begin{DoxyReturn}{Returns}
+I\+D\+\_\+\+A byte (should be 00110100, A\+S\+C\+I\+I value \textquotesingle{}4\textquotesingle{}) 
+\end{DoxyReturn}
+\hypertarget{class_h_m_c5883_l_ad5f7ab00a7380f0819e20f62a572c862}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+I\+D\+C@{get\+I\+D\+C}}
+\index{get\+I\+D\+C@{get\+I\+D\+C}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+I\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+I\+D\+C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_ad5f7ab00a7380f0819e20f62a572c862}
+Get identification byte C \begin{DoxyReturn}{Returns}
+I\+D\+\_\+\+A byte (should be 00110011, A\+S\+C\+I\+I value \textquotesingle{}3\textquotesingle{}) 
+\end{DoxyReturn}
+\hypertarget{class_h_m_c5883_l_aef3ae1e937db7acefe8da874bf61e2d9}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Lock\+Status@{get\+Lock\+Status}}
+\index{get\+Lock\+Status@{get\+Lock\+Status}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Lock\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool H\+M\+C5883\+L\+::get\+Lock\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_aef3ae1e937db7acefe8da874bf61e2d9}
+Get data output register lock status. This bit is set when this some but not all for of the six data output registers have been read. When this bit is set, the six data output registers are locked and any new data will not be placed in these register until one of three conditions are met\+: one, all six bytes have been read or the mode changed, two, the mode is changed, or three, the measurement configuration is changed. \begin{DoxyReturn}{Returns}
+Data output register lock status 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+S\+T\+A\+T\+U\+S 
+
+H\+M\+C5883\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+T 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a7210ef51ef0ad1d0908204ef5b720cac}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Measurement\+Bias@{get\+Measurement\+Bias}}
+\index{get\+Measurement\+Bias@{get\+Measurement\+Bias}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Measurement\+Bias}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+Measurement\+Bias (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a7210ef51ef0ad1d0908204ef5b720cac}
+Get measurement bias value. \begin{DoxyReturn}{Returns}
+Current bias value (0-\/2 for normal/positive/negative respectively) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+B\+I\+A\+S\+\_\+\+N\+O\+R\+M\+A\+L 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+A 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+B\+I\+A\+S\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+B\+I\+A\+S\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a3bc31a9c1d3db84f608da8a78b65b86f}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a3bc31a9c1d3db84f608da8a78b65b86f}
+Get measurement mode. In continuous-\/measurement mode, the device continuously performs measurements and places the result in the data register. R\+D\+Y goes high when new data is placed in all three registers. After a power-\/on or a write to the mode or configuration register, the first measurement set is available from all three data output registers after a period of 2/f\+D\+O and subsequent measurements are available at a frequency of f\+D\+O, where f\+D\+O is the frequency of data output.
+
+When single-\/measurement mode (default) is selected, device performs a single measurement, sets R\+D\+Y high and returned to idle mode. Mode register returns to idle mode bit values. The measurement remains in the data output register and R\+D\+Y remains high until the data output register is read or another measurement is performed.
+
+\begin{DoxyReturn}{Returns}
+Current measurement mode 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+U\+S 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+\_\+\+I\+D\+L\+E 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+M\+O\+D\+E 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+R\+E\+G\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+R\+E\+G\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a072db23747928a8fd5b41a48d37fff5d}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Ready\+Status@{get\+Ready\+Status}}
+\index{get\+Ready\+Status@{get\+Ready\+Status}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Ready\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool H\+M\+C5883\+L\+::get\+Ready\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a072db23747928a8fd5b41a48d37fff5d}
+Get data ready status. This bit is set when data is written to all six data registers, and cleared when the device initiates a write to the data output registers and after one or more of the data output registers are written to. When R\+D\+Y bit is clear it shall remain cleared for 250 us. D\+R\+D\+Y pin can be used as an alternative to the status register for monitoring the device for measurement data. \begin{DoxyReturn}{Returns}
+Data ready status 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+S\+T\+A\+T\+U\+S 
+
+H\+M\+C5883\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+B\+I\+T 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a99c7262f906b7bd4b0deb4e94857dfd9}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!get\+Sample\+Averaging@{get\+Sample\+Averaging}}
+\index{get\+Sample\+Averaging@{get\+Sample\+Averaging}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{get\+Sample\+Averaging}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t H\+M\+C5883\+L\+::get\+Sample\+Averaging (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a99c7262f906b7bd4b0deb4e94857dfd9}
+Get number of samples averaged per measurement. \begin{DoxyReturn}{Returns}
+Current samples averaged per measurement (0-\/3 for 1/2/4/8 respectively) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+A\+V\+E\+R\+A\+G\+I\+N\+G\+\_\+8 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+A 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+A\+V\+E\+R\+A\+G\+E\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+A\+V\+E\+R\+A\+G\+E\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a6e895366c47f22ab9dbe2750f2302dc4}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!initialize@{initialize}}
+\index{initialize@{initialize}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a6e895366c47f22ab9dbe2750f2302dc4}
+Power on and prepare for general usage. This will prepare the magnetometer with default settings, ready for single-\/ use mode (very low power requirements). Default settings include 8-\/sample averaging, 15 Hz data output rate, normal measurement bias, a,d 1090 gain (in terms of L\+S\+B/\+Gauss). Be sure to adjust any settings you need specifically after initialization, especially the gain settings if you happen to be seeing a lot of -\/4096 values (see the datasheet for mor information). \hypertarget{class_h_m_c5883_l_a2a13729786821e826448fac7ee43ad9e}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!set\+Data\+Rate@{set\+Data\+Rate}}
+\index{set\+Data\+Rate@{set\+Data\+Rate}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{set\+Data\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::set\+Data\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{rate}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a2a13729786821e826448fac7ee43ad9e}
+Set data output rate value. 
+\begin{DoxyParams}{Parameters}
+{\em rate} & Rate of data output to registers \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_h_m_c5883_l_aabc0bc9aca80ba60edb73a3a79a3591a}{get\+Data\+Rate()} 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+T\+E\+\_\+15 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+A 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+R\+A\+T\+E\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+R\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a1b1afb0da7ce46bede77773c99223d43}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{set\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::set\+Gain (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{gain}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a1b1afb0da7ce46bede77773c99223d43}
+Set magnetic field gain value. 
+\begin{DoxyParams}{Parameters}
+{\em gain} & New magnetic field gain value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_h_m_c5883_l_aafb840245d6da7e4b99d0fd60517449e}{get\+Gain()} 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+B 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+B\+\_\+\+G\+A\+I\+N\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+B\+\_\+\+G\+A\+I\+N\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_aafc17d11bb9f4ed9660ac0fd94991aa8}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!set\+Measurement\+Bias@{set\+Measurement\+Bias}}
+\index{set\+Measurement\+Bias@{set\+Measurement\+Bias}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{set\+Measurement\+Bias}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::set\+Measurement\+Bias (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{bias}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_aafc17d11bb9f4ed9660ac0fd94991aa8}
+Set measurement bias value. 
+\begin{DoxyParams}{Parameters}
+{\em bias} & New bias value (0-\/2 for normal/positive/negative respectively) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+B\+I\+A\+S\+\_\+\+N\+O\+R\+M\+A\+L 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+A 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+B\+I\+A\+S\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+B\+I\+A\+S\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a2838d4abd590beecad8946c4b97b7f24}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{set\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{new\+Mode}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a2838d4abd590beecad8946c4b97b7f24}
+Set measurement mode. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Mode} & New measurement mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_h_m_c5883_l_a3bc31a9c1d3db84f608da8a78b65b86f}{get\+Mode()} 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+U\+S 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+\_\+\+I\+D\+L\+E 
+
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+M\+O\+D\+E 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+R\+E\+G\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+M\+O\+D\+E\+R\+E\+G\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_a9bf281a4dcf8f21f9a64624f835b8974}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!set\+Sample\+Averaging@{set\+Sample\+Averaging}}
+\index{set\+Sample\+Averaging@{set\+Sample\+Averaging}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{set\+Sample\+Averaging}]{\setlength{\rightskip}{0pt plus 5cm}void H\+M\+C5883\+L\+::set\+Sample\+Averaging (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{averaging}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_a9bf281a4dcf8f21f9a64624f835b8974}
+Set number of samples averaged per measurement. 
+\begin{DoxyParams}{Parameters}
+{\em averaging} & New samples averaged per measurement setting(0-\/3 for 1/2/4/8 respectively) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+H\+M\+C5883\+L\+\_\+\+R\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+A 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+A\+V\+E\+R\+A\+G\+E\+\_\+\+B\+I\+T 
+
+H\+M\+C5883\+L\+\_\+\+C\+R\+A\+\_\+\+A\+V\+E\+R\+A\+G\+E\+\_\+\+L\+E\+N\+G\+T\+H 
+\end{DoxySeeAlso}
+\hypertarget{class_h_m_c5883_l_acfa47db9eccdf7ac120935de8a123f33}{}\index{H\+M\+C5883\+L@{H\+M\+C5883\+L}!test\+Connection@{test\+Connection}}
+\index{test\+Connection@{test\+Connection}!H\+M\+C5883\+L@{H\+M\+C5883\+L}}
+\subsubsection[{test\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}bool H\+M\+C5883\+L\+::test\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_h_m_c5883_l_acfa47db9eccdf7ac120935de8a123f33}
+Verify the I2\+C connection. Make sure the device is connected and responds as expected. \begin{DoxyReturn}{Returns}
+True if connection is valid, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/\+H\+M\+C5883\+L/H\+M\+C5883\+L.\+h\item 
+Libraries/\+H\+M\+C5883\+L/H\+M\+C5883\+L.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\hypertarget{structespconn}{}\section{espconn Struct Reference}
+\label{structespconn}\index{espconn@{espconn}}
+
+
+{\ttfamily \#include $<$espconn.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum espconn\+\_\+type \hyperlink{structespconn_a393c997ab67360b4e17485123518595c}{type}
+\item 
+enum espconn\+\_\+state \hyperlink{structespconn_a613ca239a3e312e72b5a593076af30b7}{state}
+\item 
+\hypertarget{structespconn_afb66ba2a45e0c2c7aa089619d909a335}{}\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct__esp__tcp}{esp\_tcp} $\ast$ {\bfseries tcp}\\
+\>\hyperlink{struct__esp__udp}{esp\_udp} $\ast$ {\bfseries udp}\\
+\} {\bfseries proto}\label{structespconn_afb66ba2a45e0c2c7aa089619d909a335}
+\\
+
+\end{tabbing}\item 
+espconn\+\_\+recv\+\_\+callback \hyperlink{structespconn_a89f6cc886a70f9b844093673f2083f00}{recv\+\_\+callback}
+\item 
+\hypertarget{structespconn_a945c23f67172f92d557a11ecf78da108}{}espconn\+\_\+sent\+\_\+callback {\bfseries sent\+\_\+callback}\label{structespconn_a945c23f67172f92d557a11ecf78da108}
+
+\item 
+\hypertarget{structespconn_a8df3d7d2a7153aa96ce6b022da5050ab}{}uint8 {\bfseries link\+\_\+cnt}\label{structespconn_a8df3d7d2a7153aa96ce6b022da5050ab}
+
+\item 
+\hypertarget{structespconn_a7298e6238b12e95329157f5c82f0187e}{}void $\ast$ {\bfseries reverse}\label{structespconn_a7298e6238b12e95329157f5c82f0187e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A espconn descriptor 
+
+\subsection{Member Data Documentation}
+\hypertarget{structespconn_a89f6cc886a70f9b844093673f2083f00}{}\index{espconn@{espconn}!recv\+\_\+callback@{recv\+\_\+callback}}
+\index{recv\+\_\+callback@{recv\+\_\+callback}!espconn@{espconn}}
+\subsubsection[{recv\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}espconn\+\_\+recv\+\_\+callback espconn\+::recv\+\_\+callback}\label{structespconn_a89f6cc886a70f9b844093673f2083f00}
+A callback function that is informed about events for this espconn \hypertarget{structespconn_a613ca239a3e312e72b5a593076af30b7}{}\index{espconn@{espconn}!state@{state}}
+\index{state@{state}!espconn@{espconn}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}enum espconn\+\_\+state espconn\+::state}\label{structespconn_a613ca239a3e312e72b5a593076af30b7}
+current state of the espconn \hypertarget{structespconn_a393c997ab67360b4e17485123518595c}{}\index{espconn@{espconn}!type@{type}}
+\index{type@{type}!espconn@{espconn}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}enum espconn\+\_\+type espconn\+::type}\label{structespconn_a393c997ab67360b4e17485123518595c}
+type of the espconn (T\+C\+P, U\+D\+P) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/include/lwip/app/espconn.\+h\end{DoxyCompactItemize}

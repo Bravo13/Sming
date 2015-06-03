@@ -1,0 +1,74 @@
+\hypertarget{class_http_response}{}\section{Http\+Response Class Reference}
+\label{class_http_response}\index{Http\+Response@{Http\+Response}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_http_response_a6ddc1855eb97864ffef28eb9a491358b}{}void {\bfseries bad\+Request} ()\label{class_http_response_a6ddc1855eb97864ffef28eb9a491358b}
+
+\item 
+\hypertarget{class_http_response_ab710c73aa65ac0506d130f6841e6194a}{}void {\bfseries not\+Found} ()\label{class_http_response_ab710c73aa65ac0506d130f6841e6194a}
+
+\item 
+\hypertarget{class_http_response_a1e5c9dd005e4e7afd1f99308b5460b2d}{}void {\bfseries forbidden} ()\label{class_http_response_a1e5c9dd005e4e7afd1f99308b5460b2d}
+
+\item 
+\hypertarget{class_http_response_aa91856817a881e9bd6db0b837e68b2c0}{}void {\bfseries authorization\+Required} ()\label{class_http_response_aa91856817a881e9bd6db0b837e68b2c0}
+
+\item 
+\hypertarget{class_http_response_abbe53a6919902bfb8b254fab864ae175}{}void {\bfseries redirect} (String location=\char`\"{}\char`\"{})\label{class_http_response_abbe53a6919902bfb8b254fab864ae175}
+
+\item 
+\hypertarget{class_http_response_ae1f5df51a03dfbcad9d82d650418713a}{}void {\bfseries set\+Content\+Type} (const String type)\label{class_http_response_ae1f5df51a03dfbcad9d82d650418713a}
+
+\item 
+\hypertarget{class_http_response_af91b228bc40b7222557b24d1d97601ad}{}void {\bfseries set\+Cookie} (const String name, const String value)\label{class_http_response_af91b228bc40b7222557b24d1d97601ad}
+
+\item 
+\hypertarget{class_http_response_a2e556aaccd751726df7ee1dc8dc95dca}{}void {\bfseries set\+Header} (const String name, const String value)\label{class_http_response_a2e556aaccd751726df7ee1dc8dc95dca}
+
+\item 
+\hypertarget{class_http_response_af7ca427335e5e6c6472ae031a8787d70}{}bool {\bfseries has\+Header} (const String name)\label{class_http_response_af7ca427335e5e6c6472ae031a8787d70}
+
+\item 
+\hypertarget{class_http_response_a097289521073c2f83c0c3edbee0eec23}{}void {\bfseries set\+Cache} (int max\+Age\+Seconds=3600, bool is\+Public=false)\label{class_http_response_a097289521073c2f83c0c3edbee0eec23}
+
+\item 
+\hypertarget{class_http_response_acd6c13889d13cf411e7e3ab34354664d}{}void {\bfseries set\+Allow\+Cross\+Domain\+Origin} (String control\+Allow\+Origin)\label{class_http_response_acd6c13889d13cf411e7e3ab34354664d}
+
+\item 
+\hypertarget{class_http_response_a376d0bd8b7fbf9facb99134583ae2ed1}{}String {\bfseries get\+Status\+Name} ()\label{class_http_response_a376d0bd8b7fbf9facb99134583ae2ed1}
+
+\item 
+\hypertarget{class_http_response_a6906d59ec9169d518e2bf9abada484ae}{}int {\bfseries get\+Status\+Code} ()\label{class_http_response_a6906d59ec9169d518e2bf9abada484ae}
+
+\item 
+\hypertarget{class_http_response_ae8045d121a30f6d7d0e21aa6cc412b97}{}bool {\bfseries has\+Body} ()\label{class_http_response_ae8045d121a30f6d7d0e21aa6cc412b97}
+
+\item 
+\hypertarget{class_http_response_aafed32c182626bb9f384105b2741d6b1}{}void {\bfseries send\+String} (const char $\ast$string)\label{class_http_response_aafed32c182626bb9f384105b2741d6b1}
+
+\item 
+\hypertarget{class_http_response_afb7fa4e217cfa24ee5afa00b63da761e}{}void {\bfseries send\+String} (String string)\label{class_http_response_afb7fa4e217cfa24ee5afa00b63da761e}
+
+\item 
+\hypertarget{class_http_response_a5ac8fc1d595d26d0e43b7429ac640743}{}bool {\bfseries send\+File} (String file\+Name, bool allow\+Gzip\+File\+Check=true)\label{class_http_response_a5ac8fc1d595d26d0e43b7429ac640743}
+
+\item 
+\hypertarget{class_http_response_a8e389f1caa47c5d77a9d0dd14ea15905}{}bool {\bfseries send\+Template} (\hyperlink{class_template_file_stream}{Template\+File\+Stream} $\ast$new\+Template\+Instance)\label{class_http_response_a8e389f1caa47c5d77a9d0dd14ea15905}
+
+\item 
+\hypertarget{class_http_response_a4ad42c6da411ab80d938f1f07e77171d}{}bool {\bfseries send\+Json\+Object} (\hyperlink{class_json_object_stream}{Json\+Object\+Stream} $\ast$new\+Json\+Stream\+Instance)\label{class_http_response_a4ad42c6da411ab80d938f1f07e77171d}
+
+\item 
+\hypertarget{class_http_response_a522560820fec07c4f1f8675699d85887}{}void {\bfseries send\+Header} (\hyperlink{class_http_server_connection}{Http\+Server\+Connection} \&connection)\label{class_http_response_a522560820fec07c4f1f8675699d85887}
+
+\item 
+\hypertarget{class_http_response_a57b20ddbf914fb287f4c321b93a872fe}{}bool {\bfseries send\+Body} (\hyperlink{class_http_server_connection}{Http\+Server\+Connection} \&connection)\label{class_http_response_a57b20ddbf914fb287f4c321b93a872fe}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sming\+Core/\+Network/Http\+Response.\+h\item 
+Sming\+Core/\+Network/Http\+Response.\+cpp\end{DoxyCompactItemize}

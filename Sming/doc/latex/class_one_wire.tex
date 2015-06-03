@@ -1,0 +1,68 @@
+\hypertarget{class_one_wire}{}\section{One\+Wire Class Reference}
+\label{class_one_wire}\index{One\+Wire@{One\+Wire}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_one_wire_aa3f23dc51d861a8d257648c507b14e8d}{}{\bfseries One\+Wire} (uint8\+\_\+t pin)\label{class_one_wire_aa3f23dc51d861a8d257648c507b14e8d}
+
+\item 
+\hypertarget{class_one_wire_acc6da81f961028fe654497c1e45f19a3}{}void {\bfseries begin} ()\label{class_one_wire_acc6da81f961028fe654497c1e45f19a3}
+
+\item 
+\hypertarget{class_one_wire_a6a742a9112392567eae3d06dde067c07}{}uint8\+\_\+t {\bfseries reset} (void)\label{class_one_wire_a6a742a9112392567eae3d06dde067c07}
+
+\item 
+\hypertarget{class_one_wire_accf808390abd63d3c7bce35677784384}{}void {\bfseries select} (const uint8\+\_\+t rom\mbox{[}8\mbox{]})\label{class_one_wire_accf808390abd63d3c7bce35677784384}
+
+\item 
+\hypertarget{class_one_wire_ae3780e2b0ea2ebf6be88298412ac7798}{}void {\bfseries skip} (void)\label{class_one_wire_ae3780e2b0ea2ebf6be88298412ac7798}
+
+\item 
+\hypertarget{class_one_wire_a843e9e7e57ed615b4880be0b76b40b7d}{}void {\bfseries write} (uint8\+\_\+t v, uint8\+\_\+t power=0)\label{class_one_wire_a843e9e7e57ed615b4880be0b76b40b7d}
+
+\item 
+\hypertarget{class_one_wire_a0fc1e0bdc2ab1f062c98567fa60a69ae}{}void {\bfseries write\+\_\+bytes} (const uint8\+\_\+t $\ast$buf, uint16\+\_\+t count, bool power=0)\label{class_one_wire_a0fc1e0bdc2ab1f062c98567fa60a69ae}
+
+\item 
+\hypertarget{class_one_wire_afd9bdb8b5a5b69b394dfc76352e00e21}{}uint8\+\_\+t {\bfseries read} (void)\label{class_one_wire_afd9bdb8b5a5b69b394dfc76352e00e21}
+
+\item 
+\hypertarget{class_one_wire_a2407440e8e25b624617593f8ad6447d4}{}void {\bfseries read\+\_\+bytes} (uint8\+\_\+t $\ast$buf, uint16\+\_\+t count)\label{class_one_wire_a2407440e8e25b624617593f8ad6447d4}
+
+\item 
+\hypertarget{class_one_wire_a6bbc58276d1cb08653dab3ea35378f94}{}void {\bfseries write\+\_\+bit} (uint8\+\_\+t v)\label{class_one_wire_a6bbc58276d1cb08653dab3ea35378f94}
+
+\item 
+\hypertarget{class_one_wire_aeae4c2798b70d9d0ba3091c03ee2d056}{}uint8\+\_\+t {\bfseries read\+\_\+bit} (void)\label{class_one_wire_aeae4c2798b70d9d0ba3091c03ee2d056}
+
+\item 
+\hypertarget{class_one_wire_aa8e0f62e830ad05d8035e55c7a309256}{}void {\bfseries depower} (void)\label{class_one_wire_aa8e0f62e830ad05d8035e55c7a309256}
+
+\item 
+\hypertarget{class_one_wire_aae5efdf67928b5ee312ab7d7906416fa}{}void {\bfseries reset\+\_\+search} ()\label{class_one_wire_aae5efdf67928b5ee312ab7d7906416fa}
+
+\item 
+\hypertarget{class_one_wire_a0a1b8457adb609a693b865dd474e5116}{}void {\bfseries target\+\_\+search} (uint8\+\_\+t family\+\_\+code)\label{class_one_wire_a0a1b8457adb609a693b865dd474e5116}
+
+\item 
+\hypertarget{class_one_wire_a383dc74fc9f8a27b76366a2859c3820a}{}uint8\+\_\+t {\bfseries search} (uint8\+\_\+t $\ast$new\+Addr)\label{class_one_wire_a383dc74fc9f8a27b76366a2859c3820a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_one_wire_ae3486a669581b750e4fdf3f3a12b05f1}{}static uint8\+\_\+t {\bfseries crc8} (const uint8\+\_\+t $\ast$addr, uint8\+\_\+t len)\label{class_one_wire_ae3486a669581b750e4fdf3f3a12b05f1}
+
+\item 
+\hypertarget{class_one_wire_a089c502d26caca5214264261db82d011}{}static bool {\bfseries check\+\_\+crc16} (const uint8\+\_\+t $\ast$input, uint16\+\_\+t len, const uint8\+\_\+t $\ast$inverted\+\_\+crc, uint16\+\_\+t crc=0)\label{class_one_wire_a089c502d26caca5214264261db82d011}
+
+\item 
+\hypertarget{class_one_wire_a685131803ff9bd250926de68fb477998}{}static uint16\+\_\+t {\bfseries crc16} (const uint8\+\_\+t $\ast$input, uint16\+\_\+t len, uint16\+\_\+t crc=0)\label{class_one_wire_a685131803ff9bd250926de68fb477998}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/\+One\+Wire/One\+Wire.\+h\item 
+Libraries/\+One\+Wire/One\+Wire.\+cpp\end{DoxyCompactItemize}

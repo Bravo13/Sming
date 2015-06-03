@@ -1,0 +1,159 @@
+\hypertarget{class_soft_i2c_master}{}\section{Soft\+I2c\+Master Class Reference}
+\label{class_soft_i2c_master}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+
+
+Software I2\+C master class.  
+
+
+
+
+{\ttfamily \#include $<$I2c\+Master.\+h$>$}
+
+Inheritance diagram for Soft\+I2c\+Master\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_soft_i2c_master}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_soft_i2c_master_a1e583d6f81bc43e403d315f05702919a}{Soft\+I2c\+Master} (uint8\+\_\+t sda\+Pin, uint8\+\_\+t scl\+Pin)
+\item 
+uint8\+\_\+t \hyperlink{class_soft_i2c_master_a56993378a66a702113eef640d8c82ea9}{read} (uint8\+\_\+t last)
+\item 
+bool \hyperlink{class_soft_i2c_master_a4ec0db661a654943888df023b233bcc5}{restart} (uint8\+\_\+t address\+R\+W)
+\item 
+bool \hyperlink{class_soft_i2c_master_a66a6298702caed4f52537ef372307699}{start} (uint8\+\_\+t address\+R\+W)
+\item 
+void \hyperlink{class_soft_i2c_master_ad8f52e1cbf15894472881afe439afa02}{stop} (void)
+\item 
+bool \hyperlink{class_soft_i2c_master_abcce5d83ae63dc61c2662be4a934d083}{write} (uint8\+\_\+t b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Software I2\+C master class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_soft_i2c_master_a1e583d6f81bc43e403d315f05702919a}{}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\subsubsection[{Soft\+I2c\+Master}]{\setlength{\rightskip}{0pt plus 5cm}Soft\+I2c\+Master\+::\+Soft\+I2c\+Master (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sda\+Pin, }
+\item[{uint8\+\_\+t}]{scl\+Pin}
+\end{DoxyParamCaption}
+)}\label{class_soft_i2c_master_a1e583d6f81bc43e403d315f05702919a}
+Initialize S\+C\+L/\+S\+D\+A pins and set the bus high.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sda\+Pin} & The software S\+D\+A pin number.\\
+\hline
+\mbox{\tt in}  & {\em scl\+Pin} & The software S\+C\+L pin number. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_soft_i2c_master_a56993378a66a702113eef640d8c82ea9}{}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!read@{read}}
+\index{read@{read}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Soft\+I2c\+Master\+::read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_soft_i2c_master_a56993378a66a702113eef640d8c82ea9}
+Read a byte and send Ack if more reads follow else Nak to terminate read.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em last} & Set true to terminate the read else false.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The byte read from the I2\+C bus. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i2c_master_base_ab0642665deb11295592d3e46c8baaefa}{I2c\+Master\+Base}.
+
+\hypertarget{class_soft_i2c_master_a4ec0db661a654943888df023b233bcc5}{}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!restart@{restart}}
+\index{restart@{restart}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\subsubsection[{restart}]{\setlength{\rightskip}{0pt plus 5cm}bool Soft\+I2c\+Master\+::restart (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address\+R\+W}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_soft_i2c_master_a4ec0db661a654943888df023b233bcc5}
+Issue a restart condition.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address\+R\+W} & I2\+C address with read/write bit.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value true, 1, for success or false, 0, for failure. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i2c_master_base_a3ccb7274e45f8842f5748d5ae9931dd0}{I2c\+Master\+Base}.
+
+\hypertarget{class_soft_i2c_master_a66a6298702caed4f52537ef372307699}{}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!start@{start}}
+\index{start@{start}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}bool Soft\+I2c\+Master\+::start (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address\+R\+W}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_soft_i2c_master_a66a6298702caed4f52537ef372307699}
+Issue a start condition.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address\+R\+W} & I2\+C address with read/write bit.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value true, 1, for success or false, 0, for failure. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i2c_master_base_adf5e98b79dec8f7b5a43c2ec8f2f9f7a}{I2c\+Master\+Base}.
+
+\hypertarget{class_soft_i2c_master_ad8f52e1cbf15894472881afe439afa02}{}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!stop@{stop}}
+\index{stop@{stop}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void Soft\+I2c\+Master\+::stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_soft_i2c_master_ad8f52e1cbf15894472881afe439afa02}
+Issue a stop condition. 
+
+Implements \hyperlink{class_i2c_master_base_a0c4f54aea3b04ed699efc0fa684712c7}{I2c\+Master\+Base}.
+
+\hypertarget{class_soft_i2c_master_abcce5d83ae63dc61c2662be4a934d083}{}\index{Soft\+I2c\+Master@{Soft\+I2c\+Master}!write@{write}}
+\index{write@{write}!Soft\+I2c\+Master@{Soft\+I2c\+Master}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}bool Soft\+I2c\+Master\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_soft_i2c_master_abcce5d83ae63dc61c2662be4a934d083}
+Write a byte.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The byte to send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value true, 1, if the slave returned an Ack or false for Nak. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i2c_master_base_aee4d48385a72b48a0a452ecfc2cd7fc0}{I2c\+Master\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Wiring/\hyperlink{_i2c_master_8h}{I2c\+Master.\+h}\item 
+Wiring/I2c\+Master.\+cpp\end{DoxyCompactItemize}

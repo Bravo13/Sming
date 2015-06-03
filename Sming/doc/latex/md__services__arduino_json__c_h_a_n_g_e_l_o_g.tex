@@ -1,0 +1,142 @@
+\subsection*{v4.\+2 }
+
+
+\begin{DoxyItemize}
+\item Switched back to old library layout (issues \#39, \#43 and \#45)
+\item Removed global new operator overload (issue \#40, \#45 and \#46)
+\item Added an example with Ethernet\+Server
+\end{DoxyItemize}
+
+\subsection*{v4.\+1 }
+
+
+\begin{DoxyItemize}
+\item Added Dynamic\+Json\+Buffer (issue \#19)
+\end{DoxyItemize}
+
+\subsection*{v4.\+0 }
+
+
+\begin{DoxyItemize}
+\item Unified parser and generator A\+P\+I (issue \#23)
+\item Updated library layout, now requires Arduino 1.\+0.\+6 or newer
+\end{DoxyItemize}
+
+{\bfseries B\+R\+E\+A\+K\+I\+N\+G C\+H\+A\+N\+G\+E}\+: A\+P\+I changed significantly, see \href{https://github.com/bblanchon/ArduinoJson/wiki/Migrating-code-to-the-new-API}{\tt Migrating code to the new A\+P\+I}.
+
+\subsection*{v3.\+4 }
+
+
+\begin{DoxyItemize}
+\item Fixed escaped char parsing (issue \#16)
+\end{DoxyItemize}
+
+\subsection*{v3.\+3 }
+
+
+\begin{DoxyItemize}
+\item Added indented output for the J\+S\+O\+N generator (issue \#11), see example bellow.
+\item Added {\ttfamily Indented\+Print}, a decorator for {\ttfamily Print} to allow indented output
+\end{DoxyItemize}
+
+Example\+: \begin{DoxyVerb}JsonOject<2> json;
+json["key"] = "value";
+json.prettyPrintTo(Serial);
+\end{DoxyVerb}
+
+
+\subsection*{v3.\+2 }
+
+
+\begin{DoxyItemize}
+\item Fixed a bug when adding nested object in {\ttfamily Json\+Array} (bug introduced in v3.\+1).
+\end{DoxyItemize}
+
+\subsection*{v3.\+1 }
+
+
+\begin{DoxyItemize}
+\item Calling {\ttfamily Generator\+::\+Json\+Object\+::add()} twice with the same {\ttfamily key} now replaces the {\ttfamily value}
+\item Added {\ttfamily Generator\+::\+Json\+Object\+::operator\mbox{[}\mbox{]}}, see bellow the new A\+P\+I
+\item Added {\ttfamily Generator\+::\+Json\+Object\+::remove()} (issue \#9)
+\end{DoxyItemize}
+
+Old generator A\+P\+I\+: \begin{DoxyVerb}JsonObject<3> root; 
+root.add("sensor", "gps");
+root.add("time", 1351824120);
+root.add("data", array);
+\end{DoxyVerb}
+
+
+New generator A\+P\+I\+: \begin{DoxyVerb}JsonObject<3> root; 
+root["sensor"] = "gps";
+root["time"] = 1351824120;
+root["data"] = array;
+\end{DoxyVerb}
+
+
+\subsection*{v3.\+0 }
+
+
+\begin{DoxyItemize}
+\item New parser A\+P\+I, see bellow
+\item Renamed {\ttfamily Json\+Hash\+Table} into {\ttfamily Json\+Object}
+\item Added iterators for {\ttfamily Json\+Array} and {\ttfamily Json\+Object} (issue \#4)
+\end{DoxyItemize}
+
+Old parser A\+P\+I\+: \begin{DoxyVerb}JsonHashTable root = parser.parseHashTable(json);
+
+char*  sensor    = root.getString("sensor");
+long   time      = root.getLong("time");
+double latitude  = root.getArray("data").getDouble(0);
+double longitude = root.getArray("data").getDouble(1);
+\end{DoxyVerb}
+
+
+New parser A\+P\+I\+: \begin{DoxyVerb}JsonObject root = parser.parse(json);
+
+char*  sensor    = root["sensor"];
+long   time      = root["time"];
+double latitude  = root["data"][0];
+double longitude = root["data"][1];
+\end{DoxyVerb}
+
+
+\subsection*{v2.\+1 }
+
+
+\begin{DoxyItemize}
+\item Fixed case {\ttfamily \#include \char`\"{}jsmn.\+cpp\char`\"{}} which caused an error in Linux (issue \#6)
+\item Fixed a buffer overrun in J\+S\+O\+N Parser (issue \#5)
+\end{DoxyItemize}
+
+\subsection*{v2.\+0 }
+
+
+\begin{DoxyItemize}
+\item Added J\+S\+O\+N encoding (issue \#2)
+\item Renamed the library {\ttfamily Arduino\+Json\+Parser} becomes {\ttfamily Arduino\+Json}
+\end{DoxyItemize}
+
+{\bfseries Breaking change}\+: you need to add the following line at the top of your program. \begin{DoxyVerb}using namespace ArduinoJson::Parser;
+\end{DoxyVerb}
+
+
+\subsection*{v1.\+2 }
+
+
+\begin{DoxyItemize}
+\item Fixed error in J\+S\+O\+N parser example (issue \#1)
+\end{DoxyItemize}
+
+\subsection*{v1.\+1 }
+
+
+\begin{DoxyItemize}
+\item Example\+: changed {\ttfamily char$\ast$ json} into {\ttfamily char\mbox{[}\mbox{]} json} so that the bytes are not write protected
+\item Fixed parsing bug when the J\+S\+O\+N contains multi-\/dimensional arrays
+\end{DoxyItemize}
+
+\subsection*{v1.\+0 }
+
+Initial release 
